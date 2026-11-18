@@ -24,3 +24,9 @@
 - Preservadas as 38 capacidades originais de vidraria. Fotografias individuais e preços não incluídos.
 - Teste das 12 categorias: exatamente 3 itens por filtro; busca por código, seleção de opção e detalhe conferidos. Sem erros JavaScript observados ou transbordamento horizontal em 390 px.
 - Backup anterior em backup-antes-categorias-2026-11-17. Sem publicação.
+
+### Organização por categoria
+
+- Separação dos 36 itens em 12 seções com título e contagem próprios; cada categoria mostra seus três itens juntos, inclusive sem JavaScript.
+- Busca e filtros ocultam seções sem resultados e atualizam a contagem por grupo.
+- Conferidos os 12 grupos, filtro Porcelanas, busca por PL097, estado vazio e ausência de transbordamento horizontal em celular.

@@ -184,3 +184,14 @@
  .products-page .page-hero h1 { font-size: 46px; }
  .products-page .catalog-type-filter { grid-template-columns: 1fr; }
 }
+
+/* Cada categoria mantém seus itens em uma seção própria. */
+.catalog-groups { display: grid; gap: 64px; }
+.catalog-group-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 22px 0; border-top: 2px solid #092ac6; }
+.catalog-group-heading h2 { font-size: clamp(23px, 2.2vw, 30px); line-height: 1.2; }
+.catalog-group-heading p { flex: 0 0 auto; color: #5c667c; font-size: 13px; }
+.catalog-item h3 { font-size: 24px; line-height: 1.2; }
+@media (max-width: 560px) {
+ .catalog-groups { gap: 48px; }
+ .catalog-group-heading { align-items: flex-start; }
+}

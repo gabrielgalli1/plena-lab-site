@@ -41,7 +41,12 @@
       card.hidden = !show;
       if (show) visible += 1;
     });
-    count.textContent = `${visible} ${visible === 1 ? 'produto' : 'produtos'}`;
+    document.querySelectorAll('[data-category-group]').forEach(group => {
+      const total = [...group.querySelectorAll('[data-catalog-item]')].filter(card => !card.hidden).length;
+      group.hidden = total === 0;
+      group.querySelector('[data-group-count]').textContent = `${total} ${total === 1 ? 'item' : 'itens'}`;
+    });
+    count.textContent = `${visible} ${visible === 1 ? 'item' : 'itens'}`;
     empty.hidden = visible !== 0;
     if (syncUrl) updateSearchUrl();
   }
