@@ -51,3 +51,11 @@
 - Busca simplificada e botões retangulares conforme referência; rótulos e ordem exatos solicitados, incluindo TODOS e MATERIAIS EM INOX E ALUMINIO.
 - Nova seleção: 11 categorias e 33 itens. Equipamentos gerais retirados desta prévia; versão anterior preservada no Git. Equipamentos em PP permanece.
 - Testados os 12 botões: TODOS mostra 33 itens e cada categoria mostra 3; busca PL097 retorna um item; sem erros JavaScript observados ou transbordamento em 320 px.
+
+### TODOS como diretório visual
+
+- TODOS agora mostra 11 quadros de categoria com imagem conceitual, nome e Acessar categoria, sem itens individuais.
+- Cada quadro abre a categoria com os três itens e sincroniza os botões e URL. Busca em TODOS encontra categorias pelo nome e pelos dados dos itens.
+- Composição fotográfica conceitual criada com ferramenta integrada de geração de imagens, mantida em assets/categorias-conceituais.png. As imagens são ilustrativas e identificadas no site; não representam fotos de produtos oficiais.
+- Prompt utilizado: composição fotográfica de estúdio em grade 4x3, com onze cenas independentes (vidrarias, calibração, porcelanas, ferragens, inox/alumínio, poli, acessórios, rolhas, equipamentos em PP, escovas, papel filtro), fundo claro, sem marcas; última célula vazia.
+- Testados os onze links de categoria (três itens cada), ausência de produtos em TODOS, busca PL097, celular de 390 px e capturas desktop/mobile. Sem erros JavaScript ou transbordamento observados.

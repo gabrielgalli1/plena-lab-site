@@ -13,6 +13,9 @@
   const empty = document.querySelector('[data-catalog-empty]');
   const back = document.querySelector('[data-catalog-back]');
   const form = document.querySelector('.catalog-search-form');
+  const overview = document.querySelector('[data-category-overview]');
+  const productGroups = document.querySelector('[data-product-groups]');
+  const categoryTiles = [...document.querySelectorAll('[data-category-tile]')];
   let activeType = 'todos';
   let currentId = null;
   let lastFocusedLink = null;
@@ -49,8 +52,17 @@
       group.querySelector('.catalog-group-heading').hidden = activeType !== 'todos';
       group.querySelector('[data-group-count]').textContent = `${total} ${total === 1 ? 'item' : 'itens'}`;
     });
-    count.textContent = `${visible} ${visible === 1 ? 'item' : 'itens'}`;
-    document.querySelector('.catalog-results-header h2').textContent = activeType === 'todos' ? 'Produtos e serviços' : products.find(p => p.type === activeType).category;
+    const isOverview = activeType === 'todos';
+    overview.hidden = !isOverview;
+    productGroups.hidden = isOverview;
+    let visibleCategories = 0;
+    categoryTiles.forEach(tile => {
+      const matching = cards.some(card => !card.hidden && products.find(p => p.id === card.dataset.catalogItem).type === tile.dataset.categoryTile);
+      tile.hidden = !matching;
+      if (matching) visibleCategories += 1;
+    });
+    count.textContent = isOverview ? `${visibleCategories} ${visibleCategories === 1 ? 'categoria' : 'categorias'}` : `${visible} ${visible === 1 ? 'item' : 'itens'}`;
+    document.querySelector('.catalog-results-header h2').textContent = isOverview ? 'Explore nossas categorias' : products.find(p => p.type === activeType).category;
     empty.hidden = visible !== 0;
     if (syncUrl) updateSearchUrl();
   }
@@ -100,13 +112,26 @@
     lastSignature = location.search + location.hash;
   }
   search.addEventListener('input', () => filterProducts());
-  types.forEach(button => button.addEventListener('click', () => {
-    if (activeType === button.dataset.category) return;
-    activeType = button.dataset.category;
+  function chooseCategory(category, focusResults = false) {
+    activeType = category;
     search.value = '';
-    types.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    types.forEach(item => item.setAttribute('aria-pressed', String(item.dataset.category === category)));
     filterProducts(false);
     updateSearchUrl(true);
+    if (focusResults) {
+      const heading = document.querySelector('.catalog-results-header h2');
+      heading.tabIndex = -1;
+      heading.focus({preventScroll:true});
+      document.querySelector('.catalog-results-header').scrollIntoView({block:'start',behavior:'instant'});
+    }
+  }
+  types.forEach(button => button.addEventListener('click', () => {
+    if (activeType !== button.dataset.category) chooseCategory(button.dataset.category);
+  }));
+  document.querySelectorAll('[data-open-category]').forEach(link => link.addEventListener('click', event => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button > 0) return;
+    event.preventDefault();
+    chooseCategory(link.dataset.openCategory, true);
   }));
   form.addEventListener('submit', event => {
     event.preventDefault();

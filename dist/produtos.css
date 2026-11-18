@@ -194,3 +194,15 @@
  .products-page .catalog-section { padding-top: 28px; }
  .catalog-category-buttons button { font-size: 12px; padding: 10px 12px; }
 }
+
+/* TODOS é uma entrada visual para as categorias, não uma lista de itens. */
+.category-tile-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 40px 24px; }
+.category-tile { min-width: 0; }
+.category-tile a { display: block; }
+.category-tile-image { width: 100%; aspect-ratio: 1; background-image: url("assets/categorias-conceituais.png"); background-size: 400% 300%; background-repeat: no-repeat; background-color: #f3f5f8; }
+.category-tile h3 { margin-top: 20px; font-size: 20px; line-height: 1.3; }
+.category-tile-link { display: flex; justify-content: space-between; gap: 12px; min-height: 44px; align-items: center; margin-top: 14px; border-top: 1px solid #dce4f1; color: #092ac6; font-size: 14px; font-weight: 600; }
+.category-tile a:hover .category-tile-link { text-decoration: underline; text-underline-offset: 4px; }
+.category-image-note { margin-top: 28px; color: #5c667c; font-size: 12px; }
+@media(max-width:880px) { .category-tile-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:560px) { .category-tile-grid { grid-template-columns: 1fr; gap: 34px; } }
