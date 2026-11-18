@@ -77,9 +77,11 @@
     const detail = details.find(node => node.dataset.productDetail === product.id);
     const subject = [product.name, product.subtitle].filter(Boolean).join(' — ');
     detail.querySelector('[data-product-inquiry]').href = `https://wa.me/5511947092039?text=${encodeURIComponent(`Olá! Gostaria de informações sobre ${subject} e as opções disponíveis.`)}`;
-  }  function showRoute(focus = false) {
+  }
+  function showRoute(focus = false) {
     const hash = new URLSearchParams(location.hash.slice(1));
     const product = products.find(p => p.id === hash.get('produto'));
+    document.body.classList.toggle('viewing-product', Boolean(product));
     listView.hidden = Boolean(product);
     detailView.hidden = !product;
     details.forEach(detail => { detail.hidden = !product || detail.dataset.productDetail !== product.id; });

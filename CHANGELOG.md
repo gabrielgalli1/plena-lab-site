@@ -76,3 +76,13 @@
 - Gral com pistilo: capacidades conferidas na página da loja (60 mL a 10.000 mL). Pistilos: comprimentos extraídos da coluna E da aba Porcelanas; pistilo de porcelana também conferido na loja.
 - Mantidas fotos, busca por códigos e referências no conjunto de dados; não são mais seleções obrigatórias na interface.
 - Testados abertura, busca, consulta, volta e os detalhes em celular; sem seletores antigos ou transbordamento horizontal no fluxo verificado.
+
+### Acabamento visual dos detalhes
+
+- Ajustada composição em duas colunas com foto inteira, título mais destacado, descrição com leitura confortável e resumo de capacidades em fundo suave.
+- Categoria repetida removida da ficha; mantida como link para navegação. Consulta como ação principal e loja como ação secundária nos itens com fonte disponível.
+- Detalhe abre como vista própria, sem repetir a introdução do catálogo. Ao voltar, a introdução e a posição da listagem são restauradas.
+- Estilos isolados em produto-detalhe.css; paleta, tipografia e demais páginas preservadas. Título do item em h1 na vista de detalhe.
+- Corrigido nesta página o filtro que apagava a imagem do logotipo no rodapé.
+- Conferidos navegação de categorias, abertura/retorno, histórico, redução de movimento e larguras 320/390/768/1024/1440. Sem erros JavaScript ou transbordamento no fluxo testado. Capturas desktop/mobile inspecionadas.
+- Gate automatizado da skill: GATE: OFF (no build active); sem alegação de aprovação desse gate. Verificação visual e funcional efetuada com Playwright no projeto existente.
