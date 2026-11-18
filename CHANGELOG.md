@@ -106,3 +106,11 @@
 - Botão navega para #catalogo-2026 com compensação do cabeçalho fixo. Mantido um h1 por página, redução de movimento e imagens com texto alternativo.
 - Conferidos 320/390/768/1024/1440, clique no botão, resposta HTTP do PDF, capturas desktop/mobile. Sem erros JavaScript ou transbordamento observados.
 - Prévia local para avaliação; nenhuma publicação.
+
+### Abertura do Catálogo em faixa
+
+- Substituída a introdução em duas colunas por faixa fotográfica horizontal com apenas o título, sem parágrafo e sem botão adicional.
+- Imagem conceitual recomposta com ferramenta integrada para proporção 3:1, vidrarias à direita e espaço claro à esquerda. Arquivo atual: assets/catalogo-faixa.webp; versão anterior preservada.
+- Mantida a seção aprovada de consulta/download do catálogo e seus atalhos.
+- Layout empilhado e faixa compacta no celular. Conferidos 320/390/768/1024/1440/1920, PDF HTTP 200 e capturas desktop/mobile, sem erros JavaScript ou transbordamento observados.
+- Alteração local, sem publicação. Backup anterior em tag.

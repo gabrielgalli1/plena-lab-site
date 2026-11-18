@@ -65,27 +65,25 @@
  .catalog-page *, .catalog-page *::before, .catalog-page *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
 
-/* Abertura editorial anterior à consulta do PDF. */
-.catalog-opening { padding: 128px 0 64px; border-bottom: 1px solid #e4e9f2; }
-.catalog-opening-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 72px; align-items: center; }
-.catalog-opening h1 { font-size: clamp(44px,4.5vw,64px); line-height: 1.1; letter-spacing: -.05em; }
-.catalog-opening-copy > p { max-width: 43ch; margin-top: 26px; color: #526079; font-size: 18px; line-height: 1.8; }
-.catalog-opening-copy > .button { gap: 28px; margin-top: 32px; }
-.catalog-opening .edition-breadcrumb { margin-bottom: 32px; }
-.catalog-opening-image { width: 100%; max-width: 420px; justify-self: end; overflow: hidden; }
-.catalog-opening-image img { width: 100%; height: auto; }
-.catalog-page .catalog-edition { padding-top: 78px; }
+/* Faixa introdutória compacta; a consulta do PDF continua na seção seguinte. */
+.catalog-opening { padding: 114px 0 0; }
+.catalog-opening-banner { position: relative; }
+.catalog-opening-banner > img { display: block; width: 100%; height: auto; }
+.catalog-opening-title { position: absolute; inset: 0; display: flex; align-items: center; padding: 40px 48px; }
+.catalog-opening h1 { max-width: 55%; font-size: clamp(34px,3.3vw,48px); line-height: 1.12; letter-spacing: -.045em; }
+.catalog-page .catalog-edition { padding-top: 72px; }
 #catalogo-2026 { scroll-margin-top: 100px; }
 #catalogo-2026:focus { outline: none; }
-@media(max-width:1100px) { .catalog-opening-grid { gap: 44px; } }
+@media(max-width:1024px) {
+ .catalog-opening-title { padding: 28px 32px; }
+ .catalog-opening h1 { font-size: clamp(30px,3.4vw,40px); }
+}
 @media(max-width:760px) {
- .catalog-opening { padding: 100px 0 44px; }
- .catalog-opening-grid { grid-template-columns: 1fr; gap: 32px; }
- .catalog-opening .edition-breadcrumb { margin-bottom: 24px; }
- .catalog-opening h1 { font-size: clamp(40px,7.5vw,54px); }
- .catalog-opening-copy > p { font-size: 16px; margin-top: 22px; }
- .catalog-opening-copy > .button { margin-top: 26px; }
- .catalog-opening-image { max-width: 420px; justify-self: center; }
+ .catalog-opening { padding-top: 100px; }
+ .catalog-opening-banner { display: flex; flex-direction: column; gap: 24px; }
+ .catalog-opening-title { position: static; order: -1; padding: 0; }
+ .catalog-opening h1 { max-width: 100%; font-size: clamp(32px,6vw,40px); }
+ .catalog-opening-banner > img { height: 170px; object-fit: cover; object-position: right center; }
  .catalog-page .catalog-edition { padding-top: 48px; }
  #catalogo-2026 { scroll-margin-top: 86px; }
 }
