@@ -20,7 +20,7 @@
 
   const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const compact = value => normalize(value).replace(/[^a-z0-9]/g, '');
-  const textIndex = product => normalize([product.name, product.subtitle, product.description, product.sourceName, ...product.aliases, ...product.variants.flatMap(v => [v.reference, v.capacity, `${v.capacityMl}ml`])].join(' '));
+  const textIndex = product => normalize([product.name, product.subtitle, product.description, product.sourceName, ...product.aliases, ...product.variants.flatMap(v => [v.reference, v.capacity])].join(' '));
   const indexes = new Map(products.map(p => [p.id, textIndex(p)]));
   function updateSearchUrl() {
     const url = new URL(location.href);
@@ -58,7 +58,7 @@
   function updateVariant(product, variant) {
     const detail = details.find(node => node.dataset.productDetail === product.id);
     detail.querySelectorAll('input[type="radio"]').forEach(input => { input.checked = Boolean(variant && Number(input.value) === variant.capacityMl); });
-    detail.querySelector('[data-variant-info]').textContent = variant ? `${variant.capacity} — ${variant.reference}` : 'Selecione uma capacidade acima.';
+    detail.querySelector('[data-variant-info]').textContent = variant ? `${variant.capacity} — ${variant.reference}` : 'Selecione uma opção acima.';
     const subject = [product.name, product.subtitle, variant ? `${variant.capacity}, referência ${variant.reference}` : ''].filter(Boolean).join(' — ');
     detail.querySelector('[data-product-inquiry]').href = `https://wa.me/5511947092039?text=${encodeURIComponent(`Olá! Gostaria de informações sobre ${subject}.`)}`;
   }
@@ -78,7 +78,7 @@
     } else {
       const previousId = currentId;
       currentId = null;
-      document.title = 'Vidrarias e produtos para laboratório | Plena-Lab';
+      document.title = 'Produtos e categorias para laboratório | Plena-Lab';
       if (focus && previousId) {
         const target = lastFocusedLink && !lastFocusedLink.closest('[hidden]') ? lastFocusedLink : search;
         target.focus();

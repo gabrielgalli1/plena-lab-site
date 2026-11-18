@@ -11,3 +11,7 @@ Amostra para aprovação: béquer Griffin, Erlenmeyer boca estreita e proveta co
 Fluxo: pesquisa e filtro → produto → seleção de capacidade → referência e consulta. Detalhes permanecem na própria página. Manter navegação por teclado, foco visível, responsividade e redução de movimento.
 
 O restante do catálogo depende da aprovação deste formato. Outras categorias aguardam validação. Não publicar automaticamente. Não incluir planilhas comerciais ou credenciais no repositório.
+
+## Ampliação da prévia — 17/11/2026
+
+O usuário autorizou todas as categorias da lista e três itens por categoria, mantendo a introdução ilustrada original. A prévia atual tem 12 categorias e 36 itens, incluindo serviços de certificação. O escopo anterior restrito à vidraria foi ampliado por essa solicitação. Opções podem ser capacidades, medidas, modelos ou referências; dados ausentes permanecem sob consulta. Não presumir unidade a partir de códigos de porcelana ou medidas de filtro sem legenda explícita.
