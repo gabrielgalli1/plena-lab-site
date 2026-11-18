@@ -458,7 +458,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL1-10.000"
       }
     ],
-    "range": "14 opções disponíveis"
+    "range": "14 opções disponíveis",
+    "image": "assets/porcelana-gral-pistilo.jpg",
+    "imageSource": "https://www.lojaplenalab.com.br/porcelanas/gral-com-pistilo"
   },
   {
     "id": "porcelanas-pistilo-com-cabo-de-madeira",
@@ -509,7 +511,9 @@ window.PLENA_PRODUCTS = [
         "reference": "P2A-5"
       }
     ],
-    "range": "6 opções disponíveis"
+    "range": "6 opções disponíveis",
+    "image": "assets/porcelana-pistilo-madeira.png",
+    "imageSource": "https://www.lojaplenalab.com.br/porcelanas/pistilo-com-cabo-de-madeira"
   },
   {
     "id": "porcelanas-pistilo-de-porcelana",
@@ -560,7 +564,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL2B-5"
       }
     ],
-    "range": "6 opções disponíveis"
+    "range": "6 opções disponíveis",
+    "image": "assets/porcelana-pistilo.png",
+    "imageSource": "https://www.lojaplenalab.com.br/porcelanas/pistilo-de-porcelana"
   },
   {
     "id": "ferragens-afiador-para-furador-de-rolhas",

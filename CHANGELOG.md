@@ -59,3 +59,11 @@
 - Composição fotográfica conceitual criada com ferramenta integrada de geração de imagens, mantida em assets/categorias-conceituais.png. As imagens são ilustrativas e identificadas no site; não representam fotos de produtos oficiais.
 - Prompt utilizado: composição fotográfica de estúdio em grade 4x3, com onze cenas independentes (vidrarias, calibração, porcelanas, ferragens, inox/alumínio, poli, acessórios, rolhas, equipamentos em PP, escovas, papel filtro), fundo claro, sem marcas; última célula vazia.
 - Testados os onze links de categoria (três itens cada), ausência de produtos em TODOS, busca PL097, celular de 390 px e capturas desktop/mobile. Sem erros JavaScript ou transbordamento observados.
+
+### Fotos reais da loja na prévia de porcelanas
+
+- Aplicadas fotos da loja virtual aos três itens: gral com pistilo, pistilo com cabo de madeira e pistilo de porcelana, tanto na listagem quanto nos detalhes.
+- Arquivos copiados para assets locais, sem edição, recorte ou distorção; apresentação com object-fit contain. Fotos da família não vinculadas a uma medida específica.
+- Fontes registradas em FONTES_FOTOS_PORCELANAS.md; nenhuma importação de preços ou alteração das referências.
+- Conferido carregamento das três fotos na listagem desktop e detalhe mobile, sem transbordamento horizontal em 390 px. Mantidas as demais categorias.
+- Backup anterior preservado no Git; nenhuma publicação.
