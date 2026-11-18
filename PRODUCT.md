@@ -15,3 +15,5 @@ O restante do catálogo depende da aprovação deste formato. Outras categorias 
 ## Ampliação da prévia — 17/11/2026
 
 O usuário autorizou todas as categorias da lista e três itens por categoria, mantendo a introdução ilustrada original. A prévia atual tem 12 categorias e 36 itens, incluindo serviços de certificação. O escopo anterior restrito à vidraria foi ampliado por essa solicitação. Opções podem ser capacidades, medidas, modelos ou referências; dados ausentes permanecem sob consulta. Não presumir unidade a partir de códigos de porcelana ou medidas de filtro sem legenda explícita.
+
+A seleção de categorias foi redefinida explicitamente pelo usuário: VIDRARIAS, CERTIFICADOS, PORCELANAS, FERRAGENS, MATERIAIS EM INOX E ALUMINIO, MATERIAL EM POLI, ACESSORIOS, ROLHAS, EQUIPAMENTOS EM PP, ESCOVAS, PAPEL FILTRO; botão TODOS. São 11 categorias com três itens por categoria, 33 itens. O nome ampliado de inox e alumínio não implica alteração do material declarado de cada produto da amostra.

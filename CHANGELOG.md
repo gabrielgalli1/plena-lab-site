@@ -45,3 +45,9 @@
 - Removidas regras antigas da coluna lateral. Corrigida quebra de texto de opções longas em telas estreitas e atualizadas URLs de CSS/JS para evitar mistura com versões em cache.
 - Verificados todos os 12 filtros, busca PL097 com seleção automática de 250 mL, alteração por teclado, histórico voltar/avançar, estado vazio, reset, fallback dos 36 itens sem JavaScript e acesso direto ao detalhe.
 - Conferidos os 36 detalhes em 320 px e layout em 320, 390, 768 e 1440 px. Sem transbordamento horizontal ou erros JavaScript observados no fluxo testado. Conferência visual em desktop e celular.
+
+### Categorias definidas pelo usuário
+
+- Busca simplificada e botões retangulares conforme referência; rótulos e ordem exatos solicitados, incluindo TODOS e MATERIAIS EM INOX E ALUMINIO.
+- Nova seleção: 11 categorias e 33 itens. Equipamentos gerais retirados desta prévia; versão anterior preservada no Git. Equipamentos em PP permanece.
+- Testados os 12 botões: TODOS mostra 33 itens e cada categoria mostra 3; busca PL097 retorna um item; sem erros JavaScript observados ou transbordamento em 320 px.

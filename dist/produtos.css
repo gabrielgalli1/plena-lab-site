@@ -181,3 +181,16 @@
  .capacity-options { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 .capacity-choice span { white-space: normal; overflow-wrap: anywhere; height: 100%; }
+
+/* Busca e botões conforme referência enviada em 17/11. */
+.products-page .catalog-section { padding-top: 62px; border-top: 0; }
+.products-page .catalog-search-form > label, .products-page .catalog-search-form > p { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.products-page .catalog-search-field { min-height: 60px; padding: 0 18px; border-radius: 0; border-color: #dce4f1; }
+.products-page .catalog-search-field > svg { color: #092ac6; }
+.products-page .catalog-search-submit { display: none; }
+.products-page.catalog-enhanced .catalog-category-buttons { margin-top: 26px; margin-bottom: 44px; gap: 8px; }
+.catalog-category-buttons button { padding: 10px 17px; }
+@media(max-width:560px) {
+ .products-page .catalog-section { padding-top: 28px; }
+ .catalog-category-buttons button { font-size: 12px; padding: 10px 12px; }
+}

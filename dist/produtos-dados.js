@@ -1,4 +1,4 @@
-// Amostra de produtos e serviços, sem preços.
+// Prévia sem preços.
 window.PLENA_PRODUCTS = [
   {
     "id": "bequer-griffin",
@@ -110,7 +110,7 @@ window.PLENA_PRODUCTS = [
       }
     ],
     "range": "5 a 5.000 mL",
-    "category": "Vidrarias"
+    "category": "VIDRARIAS"
   },
   {
     "id": "erlenmeyer-boca-estreita",
@@ -202,7 +202,7 @@ window.PLENA_PRODUCTS = [
       }
     ],
     "range": "25 a 6.000 mL",
-    "category": "Vidrarias"
+    "category": "VIDRARIAS"
   },
   {
     "id": "proveta-base-hexagonal",
@@ -274,12 +274,12 @@ window.PLENA_PRODUCTS = [
       }
     ],
     "range": "5 a 2.000 mL",
-    "category": "Vidrarias"
+    "category": "VIDRARIAS"
   },
   {
     "id": "certificados-certificacao-de-balao-volumetrico",
     "type": "certificados",
-    "category": "Certificados",
+    "category": "CERTIFICADOS",
     "name": "Certificação de balão volumétrico",
     "subtitle": "Certificados",
     "description": "Certificação de balão volumétrico.",
@@ -310,7 +310,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "certificados-certificacao-de-frasco-b-o-d",
     "type": "certificados",
-    "category": "Certificados",
+    "category": "CERTIFICADOS",
     "name": "Certificação de frasco b.o.d.",
     "subtitle": "Certificados",
     "description": "Certificação de frasco b.o.d..",
@@ -336,7 +336,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "certificados-certificacao-de-bequer-graduado",
     "type": "certificados",
-    "category": "Certificados",
+    "category": "CERTIFICADOS",
     "name": "Certificação de béquer graduado",
     "subtitle": "Certificados",
     "description": "Certificação de béquer graduado.",
@@ -370,87 +370,9 @@ window.PLENA_PRODUCTS = [
     "range": "3 opções disponíveis"
   },
   {
-    "id": "rolhas-de-borracha-e-silicone-rolha-de-borracha-dupla-conica-para-butirometros",
-    "type": "rolhas-de-borracha-e-silicone",
-    "category": "Rolhas de borracha e silicone",
-    "name": "Rolha de borracha dupla conica para butirometros",
-    "subtitle": "Rolhas de borracha e silicone",
-    "description": "Rolha de borracha dupla conica para butirometros.",
-    "sourceName": "Rolha de borracha dupla conica para butirometros",
-    "aliases": [
-      "Rolhas de borracha e silicone"
-    ],
-    "features": [
-      [
-        "Categoria",
-        "Rolhas de borracha e silicone"
-      ]
-    ],
-    "variants": [
-      {
-        "capacityMl": 1,
-        "capacity": "Unidade",
-        "reference": "PL531"
-      }
-    ],
-    "range": "Unidade"
-  },
-  {
-    "id": "rolhas-de-borracha-e-silicone-rolha-de-borracha-simples-conica-para-butirometros",
-    "type": "rolhas-de-borracha-e-silicone",
-    "category": "Rolhas de borracha e silicone",
-    "name": "Rolha de borracha simples  conica para butirometros",
-    "subtitle": "Rolhas de borracha e silicone",
-    "description": "Rolha de borracha simples  conica para butirometros.",
-    "sourceName": "Rolha de borracha simples  conica para butirometros",
-    "aliases": [
-      "Rolhas de borracha e silicone"
-    ],
-    "features": [
-      [
-        "Categoria",
-        "Rolhas de borracha e silicone"
-      ]
-    ],
-    "variants": [
-      {
-        "capacityMl": 1,
-        "capacity": "Unidade",
-        "reference": "PL531A"
-      }
-    ],
-    "range": "Unidade"
-  },
-  {
-    "id": "rolhas-de-borracha-e-silicone-rolha-de-borracha-conica-pequena-para-butirometros",
-    "type": "rolhas-de-borracha-e-silicone",
-    "category": "Rolhas de borracha e silicone",
-    "name": "Rolha de borracha conica pequena para butirometros",
-    "subtitle": "Rolhas de borracha e silicone",
-    "description": "Rolha de borracha conica pequena para butirometros.",
-    "sourceName": "Rolha de borracha conica pequena para butirometros",
-    "aliases": [
-      "Rolhas de borracha e silicone"
-    ],
-    "features": [
-      [
-        "Categoria",
-        "Rolhas de borracha e silicone"
-      ]
-    ],
-    "variants": [
-      {
-        "capacityMl": 1,
-        "capacity": "Unidade",
-        "reference": "PL532"
-      }
-    ],
-    "range": "Unidade"
-  },
-  {
     "id": "porcelanas-gral-com-pistilo",
     "type": "porcelanas",
-    "category": "Porcelanas",
+    "category": "PORCELANAS",
     "name": "Gral com pistilo",
     "subtitle": "Porcelanas",
     "description": "Gral com pistilo.",
@@ -541,7 +463,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "porcelanas-pistilo-com-cabo-de-madeira",
     "type": "porcelanas",
-    "category": "Porcelanas",
+    "category": "PORCELANAS",
     "name": "Pistilo com cabo de madeira",
     "subtitle": "Porcelanas",
     "description": "Pistilo com cabo de madeira.",
@@ -592,7 +514,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "porcelanas-pistilo-de-porcelana",
     "type": "porcelanas",
-    "category": "Porcelanas",
+    "category": "PORCELANAS",
     "name": "Pistilo de porcelana",
     "subtitle": "Porcelanas",
     "description": "Pistilo de porcelana.",
@@ -643,7 +565,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "ferragens-afiador-para-furador-de-rolhas",
     "type": "ferragens",
-    "category": "Ferragens",
+    "category": "FERRAGENS",
     "name": "Afiador para furador de rolhas",
     "subtitle": "Ferragens",
     "description": "Afiador para furador de rolhas.",
@@ -669,7 +591,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "ferragens-alcas-de-niquel-cromo",
     "type": "ferragens",
-    "category": "Ferragens",
+    "category": "FERRAGENS",
     "name": "Alças de níquel cromo",
     "subtitle": "Ferragens",
     "description": "Alças de níquel cromo.",
@@ -705,7 +627,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "ferragens-aneis-de-inox-com-cabo",
     "type": "ferragens",
-    "category": "Ferragens",
+    "category": "FERRAGENS",
     "name": "Anéis de inox com cabo",
     "subtitle": "Ferragens",
     "description": "Anéis de inox com cabo.",
@@ -751,7 +673,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "material-em-aco-inox-alca-de-drigalsky",
     "type": "material-em-aco-inox",
-    "category": "Material em aço inox",
+    "category": "MATERIAIS EM INOX E ALUMINIO",
     "name": "Alça de Drigalsky",
     "subtitle": "Material em aço inox",
     "description": "Alça de Drigalsky.",
@@ -782,7 +704,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "material-em-aco-inox-bacia-de-aco-inox",
     "type": "material-em-aco-inox",
-    "category": "Material em aço inox",
+    "category": "MATERIAIS EM INOX E ALUMINIO",
     "name": "Bacia de aço inox",
     "subtitle": "Material em aço inox",
     "description": "Bacia de aço inox.",
@@ -818,7 +740,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "material-em-aco-inox-balde-de-aco-inox",
     "type": "material-em-aco-inox",
-    "category": "Material em aço inox",
+    "category": "MATERIAIS EM INOX E ALUMINIO",
     "name": "Balde de aço inox",
     "subtitle": "Material em aço inox",
     "description": "Balde de aço inox.",
@@ -869,7 +791,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "material-em-poli-acidimetro-de-dornick",
     "type": "material-em-poli",
-    "category": "Material em poli",
+    "category": "MATERIAL EM POLI",
     "name": "Acidímetro de Dornick",
     "subtitle": "Material em poli",
     "description": "Acidímetro de Dornick.",
@@ -910,7 +832,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "material-em-poli-alca-opcional-para-provetas",
     "type": "material-em-poli",
-    "category": "Material em poli",
+    "category": "MATERIAL EM POLI",
     "name": "Alça opcional para provetas",
     "subtitle": "Material em poli",
     "description": "Alça opcional para provetas.",
@@ -936,7 +858,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "material-em-poli-almotolia",
     "type": "material-em-poli",
-    "category": "Material em poli",
+    "category": "MATERIAL EM POLI",
     "name": "Almotolia",
     "subtitle": "Material em poli",
     "description": "Almotolia.",
@@ -967,7 +889,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "acessorios-anel-em-polipropileno-para-frasco-tampa-rosca-azul",
     "type": "acessorios",
-    "category": "Acessórios",
+    "category": "ACESSORIOS",
     "name": "Anel em polipropileno para frasco tampa rosca azul",
     "subtitle": "Acessórios",
     "description": "Anel em polipropileno para frasco tampa rosca azul.",
@@ -1033,7 +955,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "acessorios-barras-magneticas-cilindricas",
     "type": "acessorios",
-    "category": "Acessórios",
+    "category": "ACESSORIOS",
     "name": "Barras magnéticas cilíndricas",
     "subtitle": "Acessórios",
     "description": "Barras magnéticas cilíndricas.",
@@ -1074,7 +996,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "acessorios-barras-magneticas-com-anel",
     "type": "acessorios",
-    "category": "Acessórios",
+    "category": "ACESSORIOS",
     "name": "Barras magnéticas com anel",
     "subtitle": "Acessórios",
     "description": "Barras magnéticas com anel.",
@@ -1113,9 +1035,87 @@ window.PLENA_PRODUCTS = [
     "range": "4 opções disponíveis"
   },
   {
+    "id": "rolhas-de-borracha-e-silicone-rolha-de-borracha-dupla-conica-para-butirometros",
+    "type": "rolhas-de-borracha-e-silicone",
+    "category": "ROLHAS",
+    "name": "Rolha de borracha dupla conica para butirometros",
+    "subtitle": "Rolhas de borracha e silicone",
+    "description": "Rolha de borracha dupla conica para butirometros.",
+    "sourceName": "Rolha de borracha dupla conica para butirometros",
+    "aliases": [
+      "Rolhas de borracha e silicone"
+    ],
+    "features": [
+      [
+        "Categoria",
+        "Rolhas de borracha e silicone"
+      ]
+    ],
+    "variants": [
+      {
+        "capacityMl": 1,
+        "capacity": "Unidade",
+        "reference": "PL531"
+      }
+    ],
+    "range": "Unidade"
+  },
+  {
+    "id": "rolhas-de-borracha-e-silicone-rolha-de-borracha-simples-conica-para-butirometros",
+    "type": "rolhas-de-borracha-e-silicone",
+    "category": "ROLHAS",
+    "name": "Rolha de borracha simples  conica para butirometros",
+    "subtitle": "Rolhas de borracha e silicone",
+    "description": "Rolha de borracha simples  conica para butirometros.",
+    "sourceName": "Rolha de borracha simples  conica para butirometros",
+    "aliases": [
+      "Rolhas de borracha e silicone"
+    ],
+    "features": [
+      [
+        "Categoria",
+        "Rolhas de borracha e silicone"
+      ]
+    ],
+    "variants": [
+      {
+        "capacityMl": 1,
+        "capacity": "Unidade",
+        "reference": "PL531A"
+      }
+    ],
+    "range": "Unidade"
+  },
+  {
+    "id": "rolhas-de-borracha-e-silicone-rolha-de-borracha-conica-pequena-para-butirometros",
+    "type": "rolhas-de-borracha-e-silicone",
+    "category": "ROLHAS",
+    "name": "Rolha de borracha conica pequena para butirometros",
+    "subtitle": "Rolhas de borracha e silicone",
+    "description": "Rolha de borracha conica pequena para butirometros.",
+    "sourceName": "Rolha de borracha conica pequena para butirometros",
+    "aliases": [
+      "Rolhas de borracha e silicone"
+    ],
+    "features": [
+      [
+        "Categoria",
+        "Rolhas de borracha e silicone"
+      ]
+    ],
+    "variants": [
+      {
+        "capacityMl": 1,
+        "capacity": "Unidade",
+        "reference": "PL532"
+      }
+    ],
+    "range": "Unidade"
+  },
+  {
     "id": "equipamentos-em-pp-deionizador-de-agua-50-litros-hora",
     "type": "equipamentos-em-pp",
-    "category": "Equipamentos em PP",
+    "category": "EQUIPAMENTOS EM PP",
     "name": "Deionizador de água 50 litros/hora",
     "subtitle": "Equipamentos em PP",
     "description": "Deionizador de água 50 litros/hora.",
@@ -1151,7 +1151,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "equipamentos-em-pp-deionizador-de-agua-100-litros-hora",
     "type": "equipamentos-em-pp",
-    "category": "Equipamentos em PP",
+    "category": "EQUIPAMENTOS EM PP",
     "name": "Deionizador de água 100 litros/hora",
     "subtitle": "Equipamentos em PP",
     "description": "Deionizador de água 100 litros/hora.",
@@ -1182,7 +1182,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "equipamentos-em-pp-barriletes-em-polipropileno",
     "type": "equipamentos-em-pp",
-    "category": "Equipamentos em PP",
+    "category": "EQUIPAMENTOS EM PP",
     "name": "Barriletes em polipropileno",
     "subtitle": "Equipamentos em PP",
     "description": "Barriletes em polipropileno.",
@@ -1226,87 +1226,9 @@ window.PLENA_PRODUCTS = [
     "range": "5 opções disponíveis"
   },
   {
-    "id": "equipamentos-agitador-magnetico-analogico-sem-aquecimento",
-    "type": "equipamentos",
-    "category": "Equipamentos",
-    "name": "Agitador magnético analógico sem aquecimento",
-    "subtitle": "Equipamentos",
-    "description": "Agitador magnético analógico sem aquecimento.",
-    "sourceName": "Agitador magnético analógico sem aquecimento",
-    "aliases": [
-      "Equipamentos"
-    ],
-    "features": [
-      [
-        "Alimentação",
-        "Bivolt"
-      ]
-    ],
-    "variants": [
-      {
-        "capacityMl": 1,
-        "capacity": "10 LITROS",
-        "reference": "PLSSAG"
-      }
-    ],
-    "range": "10 LITROS"
-  },
-  {
-    "id": "equipamentos-agitador-magnetico-analogico-com-aquecimento",
-    "type": "equipamentos",
-    "category": "Equipamentos",
-    "name": "Agitador magnético analógico com aquecimento",
-    "subtitle": "Equipamentos",
-    "description": "Agitador magnético analógico com aquecimento.",
-    "sourceName": "Agitador magnético analógico com aquecimento",
-    "aliases": [
-      "Equipamentos"
-    ],
-    "features": [
-      [
-        "Alimentação",
-        "110 ou 220 V — definir na consulta"
-      ]
-    ],
-    "variants": [
-      {
-        "capacityMl": 1,
-        "capacity": "10 LITROS",
-        "reference": "PLSSAGa"
-      }
-    ],
-    "range": "10 LITROS"
-  },
-  {
-    "id": "equipamentos-agitador-magnetico-digital-com-aquecimento",
-    "type": "equipamentos",
-    "category": "Equipamentos",
-    "name": "Agitador magnético digital com aquecimento",
-    "subtitle": "Equipamentos",
-    "description": "Agitador magnético digital com aquecimento.",
-    "sourceName": "Agitador magnético digital com aquecimento",
-    "aliases": [
-      "Equipamentos"
-    ],
-    "features": [
-      [
-        "Alimentação",
-        "110 ou 220 V — definir na consulta"
-      ]
-    ],
-    "variants": [
-      {
-        "capacityMl": 1,
-        "capacity": "10 LITROS",
-        "reference": "PLSSAGDa"
-      }
-    ],
-    "range": "10 LITROS"
-  },
-  {
     "id": "escovas-escova-pl180",
     "type": "escovas",
-    "category": "Escovas",
+    "category": "ESCOVAS",
     "name": "Escova PL180",
     "subtitle": "Escovas",
     "description": "Escova PL180.",
@@ -1336,7 +1258,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "escovas-escova-pl200",
     "type": "escovas",
-    "category": "Escovas",
+    "category": "ESCOVAS",
     "name": "Escova PL200",
     "subtitle": "Escovas",
     "description": "Escova PL200.",
@@ -1366,7 +1288,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "escovas-escova-pl201",
     "type": "escovas",
-    "category": "Escovas",
+    "category": "ESCOVAS",
     "name": "Escova PL201",
     "subtitle": "Escovas",
     "description": "Escova PL201.",
@@ -1396,7 +1318,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "papel-filtro-e-cartuchos-de-extracao-papel-filtro-qualitativo-circular",
     "type": "papel-filtro-e-cartuchos-de-extracao",
-    "category": "Papel filtro e cartuchos de extração",
+    "category": "PAPEL FILTRO",
     "name": "Papel filtro qualitativo circular",
     "subtitle": "Papel filtro e cartuchos de extração",
     "description": "Papel filtro qualitativo circular.",
@@ -1487,7 +1409,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "papel-filtro-e-cartuchos-de-extracao-papel-filtro-qualitativo-quadrado",
     "type": "papel-filtro-e-cartuchos-de-extracao",
-    "category": "Papel filtro e cartuchos de extração",
+    "category": "PAPEL FILTRO",
     "name": "Papel filtro qualitativo quadrado",
     "subtitle": "Papel filtro e cartuchos de extração",
     "description": "Papel filtro qualitativo quadrado.",
@@ -1523,7 +1445,7 @@ window.PLENA_PRODUCTS = [
   {
     "id": "papel-filtro-e-cartuchos-de-extracao-cartucho-extrator",
     "type": "papel-filtro-e-cartuchos-de-extracao",
-    "category": "Papel filtro e cartuchos de extração",
+    "category": "PAPEL FILTRO",
     "name": "Cartucho extrator",
     "subtitle": "Papel filtro e cartuchos de extração",
     "description": "Cartucho extrator.",
