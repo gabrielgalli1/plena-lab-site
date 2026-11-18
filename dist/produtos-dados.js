@@ -5,7 +5,7 @@ window.PLENA_PRODUCTS = [
     "type": "vidrarias",
     "name": "Béquer graduado",
     "subtitle": "Forma baixa · Griffin",
-    "description": "Béquer graduado de forma baixa, modelo Griffin.",
+    "description": "Béquer de forma baixa, modelo Griffin, para preparo, mistura e transferência de líquidos na rotina do laboratório. Possui graduação para acompanhar o volume durante o uso.",
     "sourceName": "BECKER FORMA BAIXA GRADUADO (GRIFFIN)",
     "aliases": [
       "bequer",
@@ -110,14 +110,16 @@ window.PLENA_PRODUCTS = [
       }
     ],
     "range": "5 a 5.000 mL",
-    "category": "VIDRARIAS"
+    "category": "VIDRARIAS",
+    "availabilityLabel": "Capacidades disponíveis",
+    "availabilitySummary": "De 5 mL a 5.000 mL."
   },
   {
     "id": "erlenmeyer-boca-estreita",
     "type": "vidrarias",
     "name": "Frasco Erlenmeyer",
     "subtitle": "Boca estreita",
-    "description": "Frasco Erlenmeyer de boca estreita, com opções de capacidade para consulta.",
+    "description": "Frasco Erlenmeyer de boca estreita para preparo e mistura de soluções. Seu formato permite movimentar o conteúdo manualmente, auxiliando a homogeneização de líquidos.",
     "sourceName": "FRASCO ERLENMEYER BOCA ESTREITA",
     "aliases": [
       "erlenmeyer",
@@ -202,14 +204,16 @@ window.PLENA_PRODUCTS = [
       }
     ],
     "range": "25 a 6.000 mL",
-    "category": "VIDRARIAS"
+    "category": "VIDRARIAS",
+    "availabilityLabel": "Capacidades disponíveis",
+    "availabilitySummary": "De 25 mL a 6.000 mL."
   },
   {
     "id": "proveta-base-hexagonal",
     "type": "vidrarias",
     "name": "Proveta graduada",
     "subtitle": "Base hexagonal de vidro",
-    "description": "Proveta graduada com base hexagonal de vidro.",
+    "description": "Proveta graduada com base hexagonal de vidro, utilizada para leitura de volumes de líquidos. A seleção da capacidade deve considerar o volume de trabalho da sua rotina.",
     "sourceName": "PROVETA GRADUADA BASE HEXAGONAL DE VIDRO",
     "aliases": [
       "proveta",
@@ -274,7 +278,9 @@ window.PLENA_PRODUCTS = [
       }
     ],
     "range": "5 a 2.000 mL",
-    "category": "VIDRARIAS"
+    "category": "VIDRARIAS",
+    "availabilityLabel": "Capacidades disponíveis",
+    "availabilitySummary": "De 5 mL a 2.000 mL."
   },
   {
     "id": "certificados-certificacao-de-balao-volumetrico",
@@ -282,7 +288,7 @@ window.PLENA_PRODUCTS = [
     "category": "CERTIFICADOS",
     "name": "Certificação de balão volumétrico",
     "subtitle": "Certificados",
-    "description": "Certificação de balão volumétrico.",
+    "description": "Serviço de certificação para balões volumétricos. Consulte nossa equipe para definir a faixa de volume e a documentação necessária para sua rotina.",
     "sourceName": "Certificação de balão volumétrico",
     "aliases": [
       "Certificados"
@@ -305,7 +311,9 @@ window.PLENA_PRODUCTS = [
         "reference": "Referência sob consulta"
       }
     ],
-    "range": "2 opções disponíveis"
+    "range": "2 opções disponíveis",
+    "availabilityLabel": "Faixas atendidas",
+    "availabilitySummary": "BALÃO VOLUMETRICO 1ML A 500ML; BALÃO VOLUMETRICO 1000ML A 2000ML."
   },
   {
     "id": "certificados-certificacao-de-frasco-b-o-d",
@@ -313,7 +321,7 @@ window.PLENA_PRODUCTS = [
     "category": "CERTIFICADOS",
     "name": "Certificação de frasco b.o.d.",
     "subtitle": "Certificados",
-    "description": "Certificação de frasco b.o.d..",
+    "description": "Serviço de certificação para frascos B.O.D. Consulte nossa equipe sobre as opções de certificação e a documentação aplicável ao seu processo.",
     "sourceName": "Certificação de frasco b.o.d.",
     "aliases": [
       "Certificados"
@@ -331,7 +339,9 @@ window.PLENA_PRODUCTS = [
         "reference": "Referência sob consulta"
       }
     ],
-    "range": "FRASCO B.O.D"
+    "range": "FRASCO B.O.D",
+    "availabilityLabel": "Faixas atendidas",
+    "availabilitySummary": "FRASCO B.O.D."
   },
   {
     "id": "certificados-certificacao-de-bequer-graduado",
@@ -339,7 +349,7 @@ window.PLENA_PRODUCTS = [
     "category": "CERTIFICADOS",
     "name": "Certificação de béquer graduado",
     "subtitle": "Certificados",
-    "description": "Certificação de béquer graduado.",
+    "description": "Serviço de certificação para béqueres graduados. Nossa equipe orienta sobre a faixa de capacidade e as condições para solicitação do serviço.",
     "sourceName": "Certificação de béquer graduado",
     "aliases": [
       "Certificados"
@@ -367,7 +377,9 @@ window.PLENA_PRODUCTS = [
         "reference": "Referência sob consulta"
       }
     ],
-    "range": "3 opções disponíveis"
+    "range": "3 opções disponíveis",
+    "availabilityLabel": "Faixas atendidas",
+    "availabilitySummary": "BECKER GRADUADO BAIXA /ALTA 1 ML ATÉ 1000ML; BECKER GRADUADO 2000 ML  ATE 3000ML; BECKER GRADUADO 4000 ML  ATE 5000ML."
   },
   {
     "id": "porcelanas-gral-com-pistilo",
@@ -375,7 +387,7 @@ window.PLENA_PRODUCTS = [
     "category": "PORCELANAS",
     "name": "Gral com pistilo",
     "subtitle": "Porcelanas",
-    "description": "Gral com pistilo.",
+    "description": "Conjunto de gral e pistilo em porcelana para triturar, pulverizar e misturar materiais sólidos. O gral acomoda a amostra, enquanto o pistilo auxilia a moagem manual durante o preparo no laboratório.",
     "sourceName": "Gral com pistilo",
     "aliases": [
       "Porcelanas"
@@ -389,78 +401,80 @@ window.PLENA_PRODUCTS = [
     "variants": [
       {
         "capacityMl": 1,
-        "capacity": "PL1-60",
+        "capacity": "60 mL",
         "reference": "PL1-60"
       },
       {
         "capacityMl": 2,
-        "capacity": "PL1-80",
+        "capacity": "80 mL",
         "reference": "PL1-80"
       },
       {
         "capacityMl": 3,
-        "capacity": "PL1-100",
+        "capacity": "100 mL",
         "reference": "PL1-100"
       },
       {
         "capacityMl": 4,
-        "capacity": "PL1-160",
+        "capacity": "160 mL",
         "reference": "PL1-160"
       },
       {
         "capacityMl": 5,
-        "capacity": "PL1-180",
+        "capacity": "180 mL",
         "reference": "PL1-180"
       },
       {
         "capacityMl": 6,
-        "capacity": "PL1-305",
+        "capacity": "305 mL",
         "reference": "PL1-305"
       },
       {
         "capacityMl": 7,
-        "capacity": "PL1-500",
+        "capacity": "500 mL",
         "reference": "PL1-500"
       },
       {
         "capacityMl": 8,
-        "capacity": "PL1-610",
+        "capacity": "610 mL",
         "reference": "PL1-610"
       },
       {
         "capacityMl": 9,
-        "capacity": "PL1-1160",
+        "capacity": "1.160 mL",
         "reference": "PL1-1160"
       },
       {
         "capacityMl": 10,
-        "capacity": "PL1-1735",
+        "capacity": "1.735 mL",
         "reference": "PL1-1735"
       },
       {
         "capacityMl": 11,
-        "capacity": "PL1-2500",
+        "capacity": "2.500 mL",
         "reference": "PL1-2500"
       },
       {
         "capacityMl": 12,
-        "capacity": "PL1-4170",
+        "capacity": "4.170 mL",
         "reference": "PL1-4170"
       },
       {
         "capacityMl": 13,
-        "capacity": "PL1-7000",
+        "capacity": "7.000 mL",
         "reference": "PL1-7000"
       },
       {
         "capacityMl": 14,
-        "capacity": "PL1-10.000",
+        "capacity": "10.000 mL",
         "reference": "PL1-10.000"
       }
     ],
     "range": "14 opções disponíveis",
     "image": "assets/porcelana-gral-pistilo.jpg",
-    "imageSource": "https://www.lojaplenalab.com.br/porcelanas/gral-com-pistilo"
+    "imageSource": "https://www.lojaplenalab.com.br/porcelanas/gral-com-pistilo",
+    "availabilityLabel": "Capacidades disponíveis",
+    "availabilitySummary": "De 60 mL a 10.000 mL."
   },
   {
     "id": "porcelanas-pistilo-com-cabo-de-madeira",
@@ -468,7 +482,7 @@ window.PLENA_PRODUCTS = [
     "category": "PORCELANAS",
     "name": "Pistilo com cabo de madeira",
     "subtitle": "Porcelanas",
-    "description": "Pistilo com cabo de madeira.",
+    "description": "Pistilo com cabo de madeira e extremidade de porcelana, utilizado com gral para triturar e misturar materiais. Os diferentes comprimentos permitem escolher o tamanho adequado ao recipiente e à rotina de preparo.",
     "sourceName": "Pistilo com cabo de madeira",
     "aliases": [
       "Porcelanas"
@@ -482,38 +496,40 @@ window.PLENA_PRODUCTS = [
     "variants": [
       {
         "capacityMl": 1,
-        "capacity": "P2A-0",
+        "capacity": "120 mm",
         "reference": "P2A-0"
       },
       {
         "capacityMl": 2,
-        "capacity": "P2A-1",
+        "capacity": "175 mm",
         "reference": "P2A-1"
       },
       {
         "capacityMl": 3,
-        "capacity": "P2A-2",
+        "capacity": "220 mm",
         "reference": "P2A-2"
       },
       {
         "capacityMl": 4,
-        "capacity": "P2A-3",
+        "capacity": "250 mm",
         "reference": "P2A-3"
       },
       {
         "capacityMl": 5,
-        "capacity": "P2A-4",
+        "capacity": "310 mm",
         "reference": "P2A-4"
       },
       {
         "capacityMl": 6,
-        "capacity": "P2A-5",
+        "capacity": "360 mm",
         "reference": "P2A-5"
       }
     ],
     "range": "6 opções disponíveis",
     "image": "assets/porcelana-pistilo-madeira.png",
-    "imageSource": "https://www.lojaplenalab.com.br/porcelanas/pistilo-com-cabo-de-madeira"
+    "imageSource": "https://www.lojaplenalab.com.br/porcelanas/pistilo-com-cabo-de-madeira",
+    "availabilityLabel": "Comprimentos disponíveis",
+    "availabilitySummary": "De 120 mm a 360 mm."
   },
   {
     "id": "porcelanas-pistilo-de-porcelana",
@@ -521,7 +537,7 @@ window.PLENA_PRODUCTS = [
     "category": "PORCELANAS",
     "name": "Pistilo de porcelana",
     "subtitle": "Porcelanas",
-    "description": "Pistilo de porcelana.",
+    "description": "Pistilo de porcelana para uso com gral no preparo de amostras e misturas. Auxilia a trituração e a pulverização manual de materiais sólidos, com opções de comprimento para diferentes recipientes.",
     "sourceName": "Pistilo de porcelana",
     "aliases": [
       "Porcelanas"
@@ -535,38 +551,40 @@ window.PLENA_PRODUCTS = [
     "variants": [
       {
         "capacityMl": 1,
-        "capacity": "PL2B-0",
+        "capacity": "100 mm",
         "reference": "PL2B-0"
       },
       {
         "capacityMl": 2,
-        "capacity": "PL2B-1",
+        "capacity": "110 mm",
         "reference": "PL2B-1"
       },
       {
         "capacityMl": 3,
-        "capacity": "PL2B-2",
+        "capacity": "170 mm",
         "reference": "PL2B-2"
       },
       {
         "capacityMl": 4,
-        "capacity": "PL2B-3",
+        "capacity": "220 mm",
         "reference": "PL2B-3"
       },
       {
         "capacityMl": 5,
-        "capacity": "PL2B-4",
+        "capacity": "245 mm",
         "reference": "PL2B-4"
       },
       {
         "capacityMl": 6,
-        "capacity": "PL2B-5",
+        "capacity": "260 mm",
         "reference": "PL2B-5"
       }
     ],
     "range": "6 opções disponíveis",
     "image": "assets/porcelana-pistilo.png",
-    "imageSource": "https://www.lojaplenalab.com.br/porcelanas/pistilo-de-porcelana"
+    "imageSource": "https://www.lojaplenalab.com.br/porcelanas/pistilo-de-porcelana",
+    "availabilityLabel": "Comprimentos disponíveis",
+    "availabilitySummary": "De 100 mm a 260 mm."
   },
   {
     "id": "ferragens-afiador-para-furador-de-rolhas",
@@ -574,7 +592,7 @@ window.PLENA_PRODUCTS = [
     "category": "FERRAGENS",
     "name": "Afiador para furador de rolhas",
     "subtitle": "Ferragens",
-    "description": "Afiador para furador de rolhas.",
+    "description": "Afiador para furadores de rolhas, utilizado na conservação dos jogos de ferramentas. Consulte a compatibilidade com o conjunto utilizado em seu laboratório.",
     "sourceName": "Afiador para furador de rolhas",
     "aliases": [
       "Ferragens"
@@ -592,7 +610,9 @@ window.PLENA_PRODUCTS = [
         "reference": "001"
       }
     ],
-    "range": "Afiador p/ jogos de 3 a 15 peças"
+    "range": "Afiador p/ jogos de 3 a 15 peças",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "Afiador p/ jogos de 3 a 15 peças."
   },
   {
     "id": "ferragens-alcas-de-niquel-cromo",
@@ -600,7 +620,7 @@ window.PLENA_PRODUCTS = [
     "category": "FERRAGENS",
     "name": "Alças de níquel cromo",
     "subtitle": "Ferragens",
-    "description": "Alças de níquel cromo.",
+    "description": "Alças de níquel cromo para aplicações de manipulação em laboratório. Disponíveis em diferentes comprimentos para adequação à rotina de trabalho.",
     "sourceName": "Alças de níquel cromo",
     "aliases": [
       "Ferragens"
@@ -628,7 +648,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PLF003"
       }
     ],
-    "range": "3 opções disponíveis"
+    "range": "3 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "De 5 cm; De 10 cm; De 1 metro."
   },
   {
     "id": "ferragens-aneis-de-inox-com-cabo",
@@ -636,7 +658,7 @@ window.PLENA_PRODUCTS = [
     "category": "FERRAGENS",
     "name": "Anéis de inox com cabo",
     "subtitle": "Ferragens",
-    "description": "Anéis de inox com cabo.",
+    "description": "Anéis de inox com cabo para compor montagens laboratoriais com suportes e acessórios. Escolha a medida de acordo com o recipiente e a montagem pretendida.",
     "sourceName": "Anéis de inox com cabo",
     "aliases": [
       "Ferragens"
@@ -674,7 +696,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PLF005"
       }
     ],
-    "range": "5 opções disponíveis"
+    "range": "5 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "De 5 cm; De 7 cm; De 10 cm; De 13 cm; De 15cm."
   },
   {
     "id": "material-em-aco-inox-alca-de-drigalsky",
@@ -682,7 +706,7 @@ window.PLENA_PRODUCTS = [
     "category": "MATERIAIS EM INOX E ALUMINIO",
     "name": "Alça de Drigalsky",
     "subtitle": "Material em aço inox",
-    "description": "Alça de Drigalsky.",
+    "description": "Alça de Drigalsky em aço inox para manipulação em rotinas de laboratório. Disponível nas versões curva e reta, conforme a configuração necessária ao procedimento.",
     "sourceName": "Alça de Drigalsky",
     "aliases": [
       "Material em aço inox"
@@ -705,7 +729,9 @@ window.PLENA_PRODUCTS = [
         "reference": "VT9124PL"
       }
     ],
-    "range": "2 opções disponíveis"
+    "range": "2 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "Alça Curva - 05x38x146mm; Alça Reta - 05x38x146mm."
   },
   {
     "id": "material-em-aco-inox-bacia-de-aco-inox",
@@ -713,7 +739,7 @@ window.PLENA_PRODUCTS = [
     "category": "MATERIAIS EM INOX E ALUMINIO",
     "name": "Bacia de aço inox",
     "subtitle": "Material em aço inox",
-    "description": "Bacia de aço inox.",
+    "description": "Bacia de aço inox para acomodação e manuseio de materiais na rotina do laboratório. Disponível em diferentes capacidades e dimensões para organizar o trabalho da bancada.",
     "sourceName": "Bacia de aço inox",
     "aliases": [
       "Material em aço inox"
@@ -741,7 +767,9 @@ window.PLENA_PRODUCTS = [
         "reference": "VT9114PL"
       }
     ],
-    "range": "3 opções disponíveis"
+    "range": "3 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "3.100ml 320mm; 4.700ml 350mm; 6.300ml 410mm."
   },
   {
     "id": "material-em-aco-inox-balde-de-aco-inox",
@@ -749,7 +777,7 @@ window.PLENA_PRODUCTS = [
     "category": "MATERIAIS EM INOX E ALUMINIO",
     "name": "Balde de aço inox",
     "subtitle": "Material em aço inox",
-    "description": "Balde de aço inox.",
+    "description": "Balde de aço inox para acondicionamento e transferência de materiais. As opções de capacidade permitem adequar o recipiente ao volume de trabalho.",
     "sourceName": "Balde de aço inox",
     "aliases": [
       "Material em aço inox"
@@ -792,7 +820,9 @@ window.PLENA_PRODUCTS = [
         "reference": "VT0035PL"
       }
     ],
-    "range": "6 opções disponíveis"
+    "range": "6 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "5.000ml 180x240mm; 10.000ml 220x300mm; 15.000ml 250x330mm; 20.000ml 300x330mm; 25.000ml 300x380mm; 50.000ml 380x480mm."
   },
   {
     "id": "material-em-poli-acidimetro-de-dornick",
@@ -800,7 +830,7 @@ window.PLENA_PRODUCTS = [
     "category": "MATERIAL EM POLI",
     "name": "Acidímetro de Dornick",
     "subtitle": "Material em poli",
-    "description": "Acidímetro de Dornick.",
+    "description": "Acidímetro de Dornick para compor a rotina de análise do laboratório. Consulte as opções de escala e configuração para selecionar o conjunto adequado ao seu procedimento.",
     "sourceName": "Acidímetro de Dornick",
     "aliases": [
       "Material em poli"
@@ -833,7 +863,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL2270"
       }
     ],
-    "range": "4 opções disponíveis"
+    "range": "4 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "10ML - 0 A 40; 40ML - 0 A 100; BURETA 0 -40; BURETA 0-100."
   },
   {
     "id": "material-em-poli-alca-opcional-para-provetas",
@@ -841,7 +873,7 @@ window.PLENA_PRODUCTS = [
     "category": "MATERIAL EM POLI",
     "name": "Alça opcional para provetas",
     "subtitle": "Material em poli",
-    "description": "Alça opcional para provetas.",
+    "description": "Alça opcional para provetas, destinada a complementar o manuseio do recipiente. Consulte a compatibilidade com a capacidade e o modelo da sua proveta.",
     "sourceName": "Alça opcional para provetas",
     "aliases": [
       "Material em poli"
@@ -859,7 +891,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL0901"
       }
     ],
-    "range": "500 ML, 1000 ML E 2000 ML"
+    "range": "500 ML, 1000 ML E 2000 ML",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "500 ML, 1000 ML E 2000 ML."
   },
   {
     "id": "material-em-poli-almotolia",
@@ -867,7 +901,7 @@ window.PLENA_PRODUCTS = [
     "category": "MATERIAL EM POLI",
     "name": "Almotolia",
     "subtitle": "Material em poli",
-    "description": "Almotolia.",
+    "description": "Almotolia para acondicionar e dispensar líquidos durante a rotina de trabalho. A escolha do líquido e das condições de uso deve considerar a compatibilidade com o recipiente.",
     "sourceName": "Almotolia",
     "aliases": [
       "Material em poli"
@@ -890,7 +924,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL2199"
       }
     ],
-    "range": "2 opções disponíveis"
+    "range": "2 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "CAP. 250 ML; CAP. 500 ML."
   },
   {
     "id": "acessorios-anel-em-polipropileno-para-frasco-tampa-rosca-azul",
@@ -898,7 +934,7 @@ window.PLENA_PRODUCTS = [
     "category": "ACESSORIOS",
     "name": "Anel em polipropileno para frasco tampa rosca azul",
     "subtitle": "Acessórios",
-    "description": "Anel em polipropileno para frasco tampa rosca azul.",
+    "description": "Anel em polipropileno para frascos com tampa rosca azul. Disponível em diferentes cores e medidas de encaixe; confira a compatibilidade com o frasco utilizado.",
     "sourceName": "Anel em polipropileno para frasco tampa rosca azul",
     "aliases": [
       "Acessórios"
@@ -956,7 +992,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL2200"
       }
     ],
-    "range": "9 opções disponíveis"
+    "range": "9 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "AZUL GL 32; AZUL GL 45; CINZA GL 45; AMARELO GL 45; VERDE GL 45; LARANJA GL 45; BRANCO GL 45; VERMELHO GL 45; LILAS GL 45."
   },
   {
     "id": "acessorios-barras-magneticas-cilindricas",
@@ -964,7 +1002,7 @@ window.PLENA_PRODUCTS = [
     "category": "ACESSORIOS",
     "name": "Barras magnéticas cilíndricas",
     "subtitle": "Acessórios",
-    "description": "Barras magnéticas cilíndricas.",
+    "description": "Barras magnéticas cilíndricas para uso com agitadores magnéticos no preparo de misturas. Escolha o tamanho conforme o recipiente e as condições de agitação.",
     "sourceName": "Barras magnéticas cilíndricas",
     "aliases": [
       "Acessórios"
@@ -997,7 +1035,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL2500"
       }
     ],
-    "range": "4 opções disponíveis"
+    "range": "4 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "SEM ANEL 7 X 25 MM; SEM ANEL 7 X 30 MM; SEM ANEL 7 X 40 MM; SEM ANEL 7 X 50 MM."
   },
   {
     "id": "acessorios-barras-magneticas-com-anel",
@@ -1005,7 +1045,7 @@ window.PLENA_PRODUCTS = [
     "category": "ACESSORIOS",
     "name": "Barras magnéticas com anel",
     "subtitle": "Acessórios",
-    "description": "Barras magnéticas com anel.",
+    "description": "Barras magnéticas com anel para uso com agitadores magnéticos. As diferentes medidas permitem adequar o acessório ao recipiente utilizado no preparo de misturas.",
     "sourceName": "Barras magnéticas com anel",
     "aliases": [
       "Acessórios"
@@ -1038,7 +1078,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL2510"
       }
     ],
-    "range": "4 opções disponíveis"
+    "range": "4 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "COM ANEL 8 X 25 MM; COM ANEL 8 X 30 MM; COM ANEL 8 X 40 MM; COM ANEL 10 X 50 MM."
   },
   {
     "id": "rolhas-de-borracha-e-silicone-rolha-de-borracha-dupla-conica-para-butirometros",
@@ -1046,7 +1088,7 @@ window.PLENA_PRODUCTS = [
     "category": "ROLHAS",
     "name": "Rolha de borracha dupla conica para butirometros",
     "subtitle": "Rolhas de borracha e silicone",
-    "description": "Rolha de borracha dupla conica para butirometros.",
+    "description": "Rolha de borracha de formato duplo cônico para butirômetros. Consulte a compatibilidade do encaixe com o instrumento antes de definir o modelo.",
     "sourceName": "Rolha de borracha dupla conica para butirometros",
     "aliases": [
       "Rolhas de borracha e silicone"
@@ -1064,7 +1106,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL531"
       }
     ],
-    "range": "Unidade"
+    "range": "Unidade",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "Unidade."
   },
   {
     "id": "rolhas-de-borracha-e-silicone-rolha-de-borracha-simples-conica-para-butirometros",
@@ -1072,7 +1116,7 @@ window.PLENA_PRODUCTS = [
     "category": "ROLHAS",
     "name": "Rolha de borracha simples  conica para butirometros",
     "subtitle": "Rolhas de borracha e silicone",
-    "description": "Rolha de borracha simples  conica para butirometros.",
+    "description": "Rolha de borracha de formato simples cônico para butirômetros. A escolha deve considerar o encaixe e as condições de uso do instrumento.",
     "sourceName": "Rolha de borracha simples  conica para butirometros",
     "aliases": [
       "Rolhas de borracha e silicone"
@@ -1090,7 +1134,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL531A"
       }
     ],
-    "range": "Unidade"
+    "range": "Unidade",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "Unidade."
   },
   {
     "id": "rolhas-de-borracha-e-silicone-rolha-de-borracha-conica-pequena-para-butirometros",
@@ -1098,7 +1144,7 @@ window.PLENA_PRODUCTS = [
     "category": "ROLHAS",
     "name": "Rolha de borracha conica pequena para butirometros",
     "subtitle": "Rolhas de borracha e silicone",
-    "description": "Rolha de borracha conica pequena para butirometros.",
+    "description": "Rolha de borracha cônica pequena para butirômetros. Acessório para compor a rotina de utilização do instrumento, conforme o modelo e a compatibilidade necessários.",
     "sourceName": "Rolha de borracha conica pequena para butirometros",
     "aliases": [
       "Rolhas de borracha e silicone"
@@ -1116,7 +1162,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL532"
       }
     ],
-    "range": "Unidade"
+    "range": "Unidade",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "Unidade."
   },
   {
     "id": "equipamentos-em-pp-deionizador-de-agua-50-litros-hora",
@@ -1124,7 +1172,7 @@ window.PLENA_PRODUCTS = [
     "category": "EQUIPAMENTOS EM PP",
     "name": "Deionizador de água 50 litros/hora",
     "subtitle": "Equipamentos em PP",
-    "description": "Deionizador de água 50 litros/hora.",
+    "description": "Deionizador de água da linha de equipamentos em polipropileno, com produção nominal de 50 litros por hora e opções de armazenamento. Consulte as condições de alimentação e instalação para a sua rotina.",
     "sourceName": "Deionizador de água 50 litros/hora",
     "aliases": [
       "Equipamentos em PP"
@@ -1152,7 +1200,9 @@ window.PLENA_PRODUCTS = [
         "reference": "DEIO50-CAP30L"
       }
     ],
-    "range": "3 opções disponíveis"
+    "range": "3 opções disponíveis",
+    "availabilityLabel": "Capacidades disponíveis",
+    "availabilitySummary": "De 10 Litros a 30 Litros."
   },
   {
     "id": "equipamentos-em-pp-deionizador-de-agua-100-litros-hora",
@@ -1160,7 +1210,7 @@ window.PLENA_PRODUCTS = [
     "category": "EQUIPAMENTOS EM PP",
     "name": "Deionizador de água 100 litros/hora",
     "subtitle": "Equipamentos em PP",
-    "description": "Deionizador de água 100 litros/hora.",
+    "description": "Deionizador de água da linha de equipamentos em polipropileno, com produção nominal de 100 litros por hora e opções de armazenamento. Nossa equipe orienta sobre configuração e condições de instalação.",
     "sourceName": "Deionizador de água 100 litros/hora",
     "aliases": [
       "Equipamentos em PP"
@@ -1183,7 +1233,9 @@ window.PLENA_PRODUCTS = [
         "reference": "DEIO100-CAP30L"
       }
     ],
-    "range": "2 opções disponíveis"
+    "range": "2 opções disponíveis",
+    "availabilityLabel": "Capacidades disponíveis",
+    "availabilitySummary": "De 20 Litros a 30 Litros."
   },
   {
     "id": "equipamentos-em-pp-barriletes-em-polipropileno",
@@ -1191,7 +1243,7 @@ window.PLENA_PRODUCTS = [
     "category": "EQUIPAMENTOS EM PP",
     "name": "Barriletes em polipropileno",
     "subtitle": "Equipamentos em PP",
-    "description": "Barriletes em polipropileno.",
+    "description": "Barrilete em polipropileno para armazenamento e dispensação de líquidos em laboratório. Disponível em diferentes capacidades; consulte a compatibilidade com o líquido e as condições de uso.",
     "sourceName": "Barriletes em polipropileno",
     "aliases": [
       "Equipamentos em PP"
@@ -1229,7 +1281,9 @@ window.PLENA_PRODUCTS = [
         "reference": "BAR50L"
       }
     ],
-    "range": "5 opções disponíveis"
+    "range": "5 opções disponíveis",
+    "availabilityLabel": "Capacidades disponíveis",
+    "availabilitySummary": "De 5 Litros a 50 litros."
   },
   {
     "id": "escovas-escova-pl180",
@@ -1237,7 +1291,7 @@ window.PLENA_PRODUCTS = [
     "category": "ESCOVAS",
     "name": "Escova PL180",
     "subtitle": "Escovas",
-    "description": "Escova PL180.",
+    "description": "Escova para limpeza de utensílios laboratoriais. O diâmetro e os comprimentos da escova e do cabo ajudam a escolher o modelo adequado ao acesso e ao formato do recipiente.",
     "sourceName": "Escova PL180",
     "aliases": [
       "Escovas"
@@ -1259,7 +1313,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL180"
       }
     ],
-    "range": "8 mm de diâmetro"
+    "range": "8 mm de diâmetro",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "8 mm de diâmetro."
   },
   {
     "id": "escovas-escova-pl200",
@@ -1267,7 +1323,7 @@ window.PLENA_PRODUCTS = [
     "category": "ESCOVAS",
     "name": "Escova PL200",
     "subtitle": "Escovas",
-    "description": "Escova PL200.",
+    "description": "Escova para limpeza de utensílios laboratoriais. Confira as dimensões para selecionar uma opção compatível com a abertura e a profundidade do recipiente.",
     "sourceName": "Escova PL200",
     "aliases": [
       "Escovas"
@@ -1289,7 +1345,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL200"
       }
     ],
-    "range": "10 mm de diâmetro"
+    "range": "10 mm de diâmetro",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "10 mm de diâmetro."
   },
   {
     "id": "escovas-escova-pl201",
@@ -1297,7 +1355,7 @@ window.PLENA_PRODUCTS = [
     "category": "ESCOVAS",
     "name": "Escova PL201",
     "subtitle": "Escovas",
-    "description": "Escova PL201.",
+    "description": "Escova para limpeza de utensílios laboratoriais. A combinação de diâmetro e comprimento permite adequar o acessório à rotina de limpeza e ao recipiente utilizado.",
     "sourceName": "Escova PL201",
     "aliases": [
       "Escovas"
@@ -1319,7 +1377,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL201"
       }
     ],
-    "range": "10 mm de diâmetro"
+    "range": "10 mm de diâmetro",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "10 mm de diâmetro."
   },
   {
     "id": "papel-filtro-e-cartuchos-de-extracao-papel-filtro-qualitativo-circular",
@@ -1327,7 +1387,7 @@ window.PLENA_PRODUCTS = [
     "category": "PAPEL FILTRO",
     "name": "Papel filtro qualitativo circular",
     "subtitle": "Papel filtro e cartuchos de extração",
-    "description": "Papel filtro qualitativo circular.",
+    "description": "Papel filtro qualitativo em formato circular para operações de filtração. Consulte as medidas e gramaturas disponíveis para adequação ao suporte e ao procedimento.",
     "sourceName": "Papel filtro qualitativo circular",
     "aliases": [
       "Papel filtro e cartuchos de extração"
@@ -1410,7 +1470,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL3400"
       }
     ],
-    "range": "14 opções disponíveis"
+    "range": "14 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "4.5999999999999996 — medida da lista; 5.5 — medida da lista; 7 — medida da lista; 8.5 — medida da lista; 9 — medida da lista; 10 — medida da lista; 11 — medida da lista; 12.5 — medida da lista; 15 — medida da lista; 17 — medida da lista; 18.5 — medida da lista; 20 — medida da lista; 21 — medida da lista; 24 — medida da lista."
   },
   {
     "id": "papel-filtro-e-cartuchos-de-extracao-papel-filtro-qualitativo-quadrado",
@@ -1418,7 +1480,7 @@ window.PLENA_PRODUCTS = [
     "category": "PAPEL FILTRO",
     "name": "Papel filtro qualitativo quadrado",
     "subtitle": "Papel filtro e cartuchos de extração",
-    "description": "Papel filtro qualitativo quadrado.",
+    "description": "Papel filtro qualitativo em formato quadrado para operações de filtração. Consulte as medidas e gramaturas para selecionar a apresentação adequada à sua rotina.",
     "sourceName": "Papel filtro qualitativo quadrado",
     "aliases": [
       "Papel filtro e cartuchos de extração"
@@ -1446,7 +1508,9 @@ window.PLENA_PRODUCTS = [
         "reference": "PL3400"
       }
     ],
-    "range": "3 opções disponíveis"
+    "range": "3 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "40X40 — medida da lista; 50X50 — medida da lista; 60X60 — medida da lista."
   },
   {
     "id": "papel-filtro-e-cartuchos-de-extracao-cartucho-extrator",
@@ -1454,7 +1518,7 @@ window.PLENA_PRODUCTS = [
     "category": "PAPEL FILTRO",
     "name": "Cartucho extrator",
     "subtitle": "Papel filtro e cartuchos de extração",
-    "description": "Cartucho extrator.",
+    "description": "Cartucho extrator para utilização em procedimentos de extração. As medidas devem ser escolhidas conforme a compatibilidade com o aparelho e o procedimento adotado.",
     "sourceName": "Cartucho extrator",
     "aliases": [
       "Papel filtro e cartuchos de extração"
@@ -1492,6 +1556,8 @@ window.PLENA_PRODUCTS = [
         "reference": "Referência sob consulta"
       }
     ],
-    "range": "5 opções disponíveis"
+    "range": "5 opções disponíveis",
+    "availabilityLabel": "Opções disponíveis",
+    "availabilitySummary": "22X80 mm; 25X80 mm; 33X80 mm; 33X94 mm; 43X123 mm."
   }
 ];

@@ -213,3 +213,9 @@
 .detail-media > .product-photo { aspect-ratio: 1; }
 .detail-media > p a { color: #092ac6; text-decoration: underline; text-underline-offset: 3px; }
 @media(max-width:560px) { .product-photo { aspect-ratio: 1.45; } .detail-media > .product-photo { aspect-ratio: 1.19; } }
+
+/* Detalhes informativos, sem seleção de capacidades. */
+.product-availability { margin: 26px 0 0; padding: 24px 0; border-top: 1px solid #e4e9f2; border-bottom: 1px solid #e4e9f2; }
+.product-availability h3 { margin-bottom: 12px; font-size: 16px; line-height: 1.4; letter-spacing: -.02em; }
+.product-availability p { color: #5c667c; font-size: 15px; line-height: 1.85; overflow-wrap: anywhere; }
+.detail-description { font-size: 16px; line-height: 1.8; }

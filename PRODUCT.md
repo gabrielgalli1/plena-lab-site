@@ -19,3 +19,5 @@ O usuário autorizou todas as categorias da lista e três itens por categoria, m
 A seleção de categorias foi redefinida explicitamente pelo usuário: VIDRARIAS, CERTIFICADOS, PORCELANAS, FERRAGENS, MATERIAIS EM INOX E ALUMINIO, MATERIAL EM POLI, ACESSORIOS, ROLHAS, EQUIPAMENTOS EM PP, ESCOVAS, PAPEL FILTRO; botão TODOS. São 11 categorias com três itens por categoria, 33 itens. O nome ampliado de inox e alumínio não implica alteração do material declarado de cada produto da amostra.
 
 TODOS funciona como diretório visual: um quadro com imagem, nome e Acessar categoria para cada categoria. Os itens individuais são mostrados após escolher uma categoria. Imagens de categoria geradas por IA são conceituais e podem ser substituídas por fotografias reais posteriormente.
+
+Detalhes dos itens agora têm descrição geral e resumo textual de capacidades/comprimentos/configurações, sem botões individuais e sem exigir seleção de referência. Capacidades resumidas por faixa, conforme dados disponíveis; especificações técnicas adicionais dependem de validação.

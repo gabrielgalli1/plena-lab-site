@@ -73,25 +73,18 @@
     types.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === activeType)));
     filterProducts(false);
   }
-  function selectedVariant(product, capacity) {
-    return product.variants.find(v => String(v.capacityMl) === capacity);
-  }
-  function updateVariant(product, variant) {
+  function updateInquiry(product) {
     const detail = details.find(node => node.dataset.productDetail === product.id);
-    detail.querySelectorAll('input[type="radio"]').forEach(input => { input.checked = Boolean(variant && Number(input.value) === variant.capacityMl); });
-    detail.querySelector('[data-variant-info]').textContent = variant ? `${variant.capacity} — ${variant.reference}` : 'Selecione uma opção acima.';
-    const subject = [product.name, product.subtitle, variant ? `${variant.capacity}, referência ${variant.reference}` : ''].filter(Boolean).join(' — ');
-    detail.querySelector('[data-product-inquiry]').href = `https://wa.me/5511947092039?text=${encodeURIComponent(`Olá! Gostaria de informações sobre ${subject}.`)}`;
-  }
-  function showRoute(focus = false) {
+    const subject = [product.name, product.subtitle].filter(Boolean).join(' — ');
+    detail.querySelector('[data-product-inquiry]').href = `https://wa.me/5511947092039?text=${encodeURIComponent(`Olá! Gostaria de informações sobre ${subject} e as opções disponíveis.`)}`;
+  }  function showRoute(focus = false) {
     const hash = new URLSearchParams(location.hash.slice(1));
     const product = products.find(p => p.id === hash.get('produto'));
     listView.hidden = Boolean(product);
     detailView.hidden = !product;
     details.forEach(detail => { detail.hidden = !product || detail.dataset.productDetail !== product.id; });
     if (product) {
-      const variant = selectedVariant(product, hash.get('capacidade'));
-      updateVariant(product, variant);
+      updateInquiry(product);
       currentId = product.id;
       document.title = `${product.name} ${product.subtitle} | Plena-Lab`;
       if (focus) {
@@ -155,22 +148,10 @@
     if (!product) return;
     event.preventDefault();
     listScroll = window.scrollY;
-    const term = compact(search.value);
-    const match = term && product.variants.find(v => compact(v.reference) === term || compact(v.capacity) === term);
     const url = new URL(location.href);
-    url.hash = `produto=${product.id}${match ? `&capacidade=${match.capacityMl}` : ''}`;
+    url.hash = `produto=${product.id}`;
     history.pushState(null, '', url);
     showRoute(true);
-  }));
-  details.forEach(detail => detail.addEventListener('change', event => {
-    if (!event.target.matches('input[type="radio"]')) return;
-    const product = products.find(p => p.id === detail.dataset.productDetail);
-    const variant = selectedVariant(product, event.target.value);
-    updateVariant(product, variant);
-    const url = new URL(location.href);
-    url.hash = `produto=${product.id}&capacidade=${variant.capacityMl}`;
-    history.replaceState(null, '', url);
-    lastSignature = location.search + location.hash;
   }));
   back.addEventListener('click', () => {
     const url = new URL(location.href);

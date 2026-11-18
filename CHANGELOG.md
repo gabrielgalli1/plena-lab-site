@@ -67,3 +67,12 @@
 - Fontes registradas em FONTES_FOTOS_PORCELANAS.md; nenhuma importação de preços ou alteração das referências.
 - Conferido carregamento das três fotos na listagem desktop e detalhe mobile, sem transbordamento horizontal em 390 px. Mantidas as demais categorias.
 - Backup anterior preservado no Git; nenhuma publicação.
+
+### Detalhes informativos simplificados
+
+- Removidos os seletores individuais de capacidade e o bloco de referência selecionada dos 33 detalhes. Consulta agora identifica o produto, sem exigir escolha de variação.
+- Capacidades e comprimentos apresentados como faixas em texto; outras configurações permanecem descritivas.
+- Descrições autorais de uso geral acrescentadas aos 33 itens, sem promessas de resistência, certificação, precisão ou desempenho adicionais.
+- Gral com pistilo: capacidades conferidas na página da loja (60 mL a 10.000 mL). Pistilos: comprimentos extraídos da coluna E da aba Porcelanas; pistilo de porcelana também conferido na loja.
+- Mantidas fotos, busca por códigos e referências no conjunto de dados; não são mais seleções obrigatórias na interface.
+- Testados abertura, busca, consulta, volta e os detalhes em celular; sem seletores antigos ou transbordamento horizontal no fluxo verificado.
