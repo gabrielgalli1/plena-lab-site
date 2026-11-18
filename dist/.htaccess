@@ -1,0 +1,12 @@
+Options -Indexes
+DirectoryIndex index.html
+
+# O servidor precisa executar PHP. As tabelas comerciais ficam fora desta pasta.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^revendedores\.html$ revendedores.php [R=302,L]
+</IfModule>
+
+<FilesMatch "(^\.|\.(env|log|bak|ini|xlsx|xls)$)">
+Require all denied
+</FilesMatch>

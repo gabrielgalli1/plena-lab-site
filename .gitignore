@@ -5,3 +5,12 @@
 Thumbs.db
 .DS_Store
 node_modules/
+
+# Dados comerciais e configuração de revenda nunca são versionados.
+private/
+*.xlsx
+*.xls
+config.revenda.php
+app/revenda/ambiente.php
+privado/
+plena-revenda-private/

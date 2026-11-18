@@ -1,0 +1,106 @@
+[
+  {
+    "id": "excel",
+    "title": "Lista completa em Excel",
+    "file": "lista-completa.xlsx",
+    "type": "xlsx",
+    "pages": 0,
+    "bytes": 17741312
+  },
+  {
+    "id": "vidrarias",
+    "title": "Vidrarias",
+    "file": "vidrarias.pdf",
+    "type": "pdf",
+    "pages": 39,
+    "bytes": 1150659
+  },
+  {
+    "id": "certificados",
+    "title": "Certificados",
+    "file": "certificados.pdf",
+    "type": "pdf",
+    "pages": 2,
+    "bytes": 143267
+  },
+  {
+    "id": "porcelanas",
+    "title": "Porcelanas",
+    "file": "porcelanas.pdf",
+    "type": "pdf",
+    "pages": 7,
+    "bytes": 444460
+  },
+  {
+    "id": "ferragens",
+    "title": "Ferragens",
+    "file": "ferragens.pdf",
+    "type": "pdf",
+    "pages": 9,
+    "bytes": 945391
+  },
+  {
+    "id": "inox-aluminio",
+    "title": "Materiais em inox e alumínio",
+    "file": "inox-aluminio.pdf",
+    "type": "pdf",
+    "pages": 14,
+    "bytes": 968945
+  },
+  {
+    "id": "poli",
+    "title": "Material em poli",
+    "file": "poli.pdf",
+    "type": "pdf",
+    "pages": 11,
+    "bytes": 789892
+  },
+  {
+    "id": "acessorios",
+    "title": "Acessórios",
+    "file": "acessorios.pdf",
+    "type": "pdf",
+    "pages": 4,
+    "bytes": 377742
+  },
+  {
+    "id": "rolhas",
+    "title": "Rolhas",
+    "file": "rolhas.pdf",
+    "type": "pdf",
+    "pages": 16,
+    "bytes": 245008
+  },
+  {
+    "id": "equipamentos-pp",
+    "title": "Equipamentos em PP",
+    "file": "equipamentos-pp.pdf",
+    "type": "pdf",
+    "pages": 24,
+    "bytes": 646244
+  },
+  {
+    "id": "equipamentos",
+    "title": "Equipamentos",
+    "file": "equipamentos.pdf",
+    "type": "pdf",
+    "pages": 7,
+    "bytes": 785863
+  },
+  {
+    "id": "escovas",
+    "title": "Escovas",
+    "file": "escovas.pdf",
+    "type": "pdf",
+    "pages": 1,
+    "bytes": 234618
+  },
+  {
+    "id": "papel-filtro",
+    "title": "Papel filtro",
+    "file": "papel-filtro.pdf",
+    "type": "pdf",
+    "pages": 2,
+    "bytes": 225059
+  }
+]

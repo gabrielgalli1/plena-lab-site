@@ -127,3 +127,16 @@
 - Referências de organização consultadas: DWK/DURAN (https://www.dwk.com/resource/category/e-catalogs) e Corning (https://www.corning.com/cala/en/products/life-sciences/products/glassware.html). Nenhum texto, imagem ou código dessas páginas foi incorporado.
 - Backup em tag; nenhuma publicação ou envio ao GitHub nesta etapa.
 - Revisão independente da interação de capa: disposition: ship, limitada às capturas normais/reduzidas e aos estados revisados; nenhuma correção de movimento pendente.
+
+## 2026-11-17 — Revendedores com acesso restrito
+
+- Evolução da reserva visual, autorizada pelo usuário, para login compartilhado em PHP com sessão e sem banco de dados. Aprovação de CNPJ permanece manual com a equipe.
+- Novas telas de acesso e biblioteca comercial, busca de categoria, Excel completo e doze PDFs, com visualização/download autenticados. Aplicados identidade, foco e responsividade existentes.
+- Documentos reais mantidos em pasta privada do workspace fora de dist e do Git. Nenhuma tabela comercial, credencial, extração de preços ou preview de tabela foi colocado nos assets públicos. Catálogo institucional público permanece separado.
+- Senha por hash, rotação/expiração de sessão, CSRF, limite por IP com estado privado, no-store/noindex e lista fechada de identificadores. Entrega suporta HEAD e range de PDF; sem caminho de arquivo controlado pelo usuário.
+- Configuração inicial só no servidor local em loopback e somente antes de existir credencial. Rotação por ferramenta CLI com senha oculta. Credenciais aleatórias de teste removidas; usuário definirá o acesso da prévia no próprio navegador.
+- Preparado roteiro de implantação PHP/HTTPS/armazenamento privado na Locaweb. Manifesto de hospedagem estática anterior não serve para executar a área restrita; sem publicação nesta etapa.
+- Servidor local migrado de Python para PHP na porta 4185. Links de navegação apontam para revendedores.php e URL antiga redireciona. Ajustado roteador para devolver 404 real em caminhos privados/inexistentes; nenhuma exposição de dados ocorreu nos testes.
+- Suíte HTTP isolada com arquivos fictícios: 13 cenários aprovados, incluindo ausência de autenticação, CSRF, treze downloads íntegros, range, logout, expiração, troca de senha, limite persistente sem cookie, configuração encerrada e cookie Secure fora do ambiente local.
+- Teste adicional com os treze documentos reais: downloads completos autenticados, bloqueio anônimo e após logout, PDF inline, busca, telas desktop/mobile e larguras 320/390/768/1024/1440 sem transbordamento. Arquivos inacessíveis por caminhos diretos. Sessões de teste não reutilizadas para acesso real.
+- PHP portátil validado pelo SHA256 oficial, sem instalação global. Arquivos de runtime e dados privados não versionados. Backup anterior em tag.
