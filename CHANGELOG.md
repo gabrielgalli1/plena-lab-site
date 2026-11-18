@@ -97,3 +97,12 @@
 - Estilos isolados em catalogo.css, sem alterações à página Produtos. Mantidas identidade, navegação e responsividade.
 - Testado download efetivo, nome do arquivo, resposta HTTP 200 e identidade binária. Conferidas larguras 320/390/768/1024/1440 e capturas desktop/mobile; sem erros JavaScript observados ou transbordamento horizontal.
 - Nenhuma publicação ou envio ao GitHub nesta etapa. Backup anterior preservado em tag.
+
+### Abertura ilustrada do Catálogo
+
+- Adicionada introdução acima da seção aprovada, com título Conheça nossa linha de vidrarias, texto de apoio solicitado e botão Explorar catálogo.
+- Imagem conceitual gerada com ferramenta integrada, em composição clara de vidrarias e solução azul; origem e direção do prompt documentadas em IMAGEM_ABERTURA_CATALOGO.md.
+- Texto à esquerda e imagem à direita no desktop, empilhados no celular. Seção de PDF, arquivo, download e atalhos preservados.
+- Botão navega para #catalogo-2026 com compensação do cabeçalho fixo. Mantido um h1 por página, redução de movimento e imagens com texto alternativo.
+- Conferidos 320/390/768/1024/1440, clique no botão, resposta HTTP do PDF, capturas desktop/mobile. Sem erros JavaScript ou transbordamento observados.
+- Prévia local para avaliação; nenhuma publicação.
