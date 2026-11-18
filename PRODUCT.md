@@ -21,3 +21,7 @@ A seleção de categorias foi redefinida explicitamente pelo usuário: VIDRARIAS
 TODOS funciona como diretório visual: um quadro com imagem, nome e Acessar categoria para cada categoria. Os itens individuais são mostrados após escolher uma categoria. Imagens de categoria geradas por IA são conceituais e podem ser substituídas por fotografias reais posteriormente.
 
 Detalhes dos itens agora têm descrição geral e resumo textual de capacidades/comprimentos/configurações, sem botões individuais e sem exigir seleção de referência. Capacidades resumidas por faixa, conforme dados disponíveis; especificações técnicas adicionais dependem de validação.
+
+## Catálogo 2026
+
+A página de Catálogo apresenta o PDF institucional fornecido pelo usuário, com a capa original, abertura, download e acesso às principais seções. O arquivo é servido localmente, sem alteração de conteúdo. A publicação oficial continua dependente de autorização expressa.

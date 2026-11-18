@@ -86,3 +86,14 @@
 - Corrigido nesta página o filtro que apagava a imagem do logotipo no rodapé.
 - Conferidos navegação de categorias, abertura/retorno, histórico, redução de movimento e larguras 320/390/768/1024/1440. Sem erros JavaScript ou transbordamento no fluxo testado. Capturas desktop/mobile inspecionadas.
 - Gate automatizado da skill: GATE: OFF (no build active); sem alegação de aprovação desse gate. Verificação visual e funcional efetuada com Playwright no projeto existente.
+
+## 2026-11-17 — Catálogo 2026
+
+- Substituída a página demonstrativa de Catálogo por prévia local com capa original, edição, informações do arquivo, abertura em nova aba e download.
+- Arquivo recebido preservado integralmente em dist/downloads/catalogo-plena-lab-2026.pdf (54 páginas PDF, 8.787.388 bytes). SHA256 conferido: 439e7a7fbf1bcd79595fe8a41e3beef4e08575d88596719ff9703d43f73f88a0.
+- Capa renderizada do PDF e otimizada como WebP para apresentação na página.
+- Atalhos para oito linhas apontam para as páginas físicas do PDF (8, 17, 21, 23, 27, 30, 44, 47), distintas da paginação impressa dos spreads. Compatibilidade de posicionamento depende do leitor PDF; índice disponível como alternativa.
+- Removidos os botões demonstrativos e textos sobre futura inclusão do arquivo.
+- Estilos isolados em catalogo.css, sem alterações à página Produtos. Mantidas identidade, navegação e responsividade.
+- Testado download efetivo, nome do arquivo, resposta HTTP 200 e identidade binária. Conferidas larguras 320/390/768/1024/1440 e capturas desktop/mobile; sem erros JavaScript observados ou transbordamento horizontal.
+- Nenhuma publicação ou envio ao GitHub nesta etapa. Backup anterior preservado em tag.
