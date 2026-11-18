@@ -5,7 +5,7 @@
   const search = document.querySelector('#pesquisa-produtos');
   if (!Array.isArray(products) || !search) return;
   const cards = [...document.querySelectorAll('[data-catalog-item]')];
-  const types = [...document.querySelectorAll('input[name="tipo"]')];
+  const types = [...document.querySelectorAll('[data-category]')];
   const listView = document.querySelector('[data-catalog-list-view]');
   const detailView = document.querySelector('[data-catalog-detail-view]');
   const details = [...document.querySelectorAll('[data-product-detail]')];
@@ -17,17 +17,19 @@
   let currentId = null;
   let lastFocusedLink = null;
   let lastSignature = '';
+  let listScroll = null;
 
   const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const compact = value => normalize(value).replace(/[^a-z0-9]/g, '');
   const textIndex = product => normalize([product.name, product.subtitle, product.description, product.sourceName, ...product.aliases, ...product.variants.flatMap(v => [v.reference, v.capacity])].join(' '));
   const indexes = new Map(products.map(p => [p.id, textIndex(p)]));
-  function updateSearchUrl() {
+  function updateSearchUrl(push = false) {
     const url = new URL(location.href);
     const query = search.value.trim();
     if (query) url.searchParams.set('q', query); else url.searchParams.delete('q');
     if (activeType !== 'todos') url.searchParams.set('tipo', activeType); else url.searchParams.delete('tipo');
-    history.replaceState(null, '', url);
+    history[push ? 'pushState' : 'replaceState'](null, '', url);
+    lastSignature = location.search + location.hash;
   }
   function filterProducts(syncUrl = true) {
     const terms = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
@@ -55,8 +57,8 @@
   function readSearchUrl() {
     const query = new URLSearchParams(location.search);
     search.value = query.get('q') || '';
-    activeType = types.some(input => input.value === query.get('tipo')) ? query.get('tipo') : 'todos';
-    types.forEach(input => { input.checked = input.value === activeType; });
+    activeType = types.some(button => button.dataset.category === query.get('tipo')) ? query.get('tipo') : 'todos';
+    types.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === activeType)));
     filterProducts(false);
   }
   function selectedVariant(product, capacity) {
@@ -75,26 +77,37 @@
     listView.hidden = Boolean(product);
     detailView.hidden = !product;
     details.forEach(detail => { detail.hidden = !product || detail.dataset.productDetail !== product.id; });
-    document.querySelector('.catalog-type-filter').disabled = Boolean(product);
     if (product) {
       const variant = selectedVariant(product, hash.get('capacidade'));
       updateVariant(product, variant);
       currentId = product.id;
       document.title = `${product.name} ${product.subtitle} | Plena-Lab`;
-      if (focus) document.querySelector(`#titulo-${product.id}`).focus();
+      if (focus) {
+        document.querySelector(`#titulo-${product.id}`).focus({ preventScroll: true });
+        detailView.scrollIntoView({ block: 'start', behavior: 'instant' });
+      }
     } else {
       const previousId = currentId;
       currentId = null;
       document.title = 'Produtos e categorias para laboratório | Plena-Lab';
       if (focus && previousId) {
         const target = lastFocusedLink && !lastFocusedLink.closest('[hidden]') ? lastFocusedLink : search;
-        target.focus();
+        target.focus({ preventScroll: true });
+        if (listScroll !== null) window.scrollTo({ top: listScroll, behavior: 'instant' });
+        else document.querySelector('.catalog-results-header').scrollIntoView({ block: 'start', behavior: 'instant' });
       }
     }
     lastSignature = location.search + location.hash;
   }
   search.addEventListener('input', () => filterProducts());
-  types.forEach(input => input.addEventListener('change', () => { activeType = input.value; filterProducts(); }));
+  types.forEach(button => button.addEventListener('click', () => {
+    if (activeType === button.dataset.category) return;
+    activeType = button.dataset.category;
+    search.value = '';
+    types.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    filterProducts(false);
+    updateSearchUrl(true);
+  }));
   form.addEventListener('submit', event => {
     event.preventDefault();
     filterProducts();
@@ -105,7 +118,7 @@
   document.querySelector('[data-clear-filters]').addEventListener('click', () => {
     search.value = '';
     activeType = 'todos';
-    types.forEach(input => { input.checked = input.value === 'todos'; });
+    types.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === 'todos')));
     filterProducts();
     search.focus();
   });
@@ -114,12 +127,15 @@
     lastFocusedLink = link;
     const id = new URLSearchParams(link.hash.slice(1)).get('produto');
     const product = products.find(p => p.id === id);
+    if (!product) return;
+    event.preventDefault();
+    listScroll = window.scrollY;
     const term = compact(search.value);
     const match = term && product.variants.find(v => compact(v.reference) === term || compact(v.capacity) === term);
-    if (match) {
-      event.preventDefault();
-      location.hash = `produto=${product.id}&capacidade=${match.capacityMl}`;
-    }
+    const url = new URL(location.href);
+    url.hash = `produto=${product.id}${match ? `&capacidade=${match.capacityMl}` : ''}`;
+    history.pushState(null, '', url);
+    showRoute(true);
   }));
   details.forEach(detail => detail.addEventListener('change', event => {
     if (!event.target.matches('input[type="radio"]')) return;
