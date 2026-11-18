@@ -114,3 +114,16 @@
 - Mantida a seção aprovada de consulta/download do catálogo e seus atalhos.
 - Layout empilhado e faixa compacta no celular. Conferidos 320/390/768/1024/1440/1920, PDF HTTP 200 e capturas desktop/mobile, sem erros JavaScript ou transbordamento observados.
 - Alteração local, sem publicação. Backup anterior em tag.
+
+### Polimento editorial e interações do Catálogo
+
+- Faixa e conteúdo aprovados preservados; acabamento de tipografia, espaçamento, capa com fundo discreto e ação de abertura visível.
+- Índice com oito miniaturas reais extraídas do PDF, sem modificar o arquivo. Adicionada indicação da página física do PDF para cada atalho. Imagens otimizadas em WebP (total aproximado 247 KB).
+- Bloco de atendimento com o azul da marca e botão branco; contraste, foco e navegação mantidos.
+- Hover da capa: elevação de 5 px e sombra, mantendo imóvel a área clicável. Índice com realce discreto e deslocamento curto da seta; botões com feedback de pressão. Sem biblioteca nova, autoplay, efeitos contínuos ou rotação falsa.
+- prefers-reduced-motion desativa transições e deslocamentos; foco por teclado responde sem animação. Sem JavaScript, conteúdo, links e download permanecem utilizáveis.
+- Testados 320/390/768/1024/1440/1920 px, contexto touch, menu e Escape, download efetivo, oito links de seção, links internos e ausência de erros JavaScript no fluxo. Sem transbordamento horizontal observado.
+- Conferidas capturas de desktop/mobile e sequências de entrada/saída do hover, normais e reduzidas. Capturas sequenciais com tempos e propriedades registradas; sem medição de FPS ou benchmark de desempenho. Captura por Playwright usada porque o launcher de contexto da skill estava indisponível.
+- Referências de organização consultadas: DWK/DURAN (https://www.dwk.com/resource/category/e-catalogs) e Corning (https://www.corning.com/cala/en/products/life-sciences/products/glassware.html). Nenhum texto, imagem ou código dessas páginas foi incorporado.
+- Backup em tag; nenhuma publicação ou envio ao GitHub nesta etapa.
+- Revisão independente da interação de capa: disposition: ship, limitada às capturas normais/reduzidas e aos estados revisados; nenhuma correção de movimento pendente.
