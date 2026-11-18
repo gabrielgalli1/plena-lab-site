@@ -195,3 +195,19 @@
  .catalog-groups { gap: 48px; }
  .catalog-group-heading { align-items: flex-start; }
 }
+
+/* Navegação por botões de categoria, conforme referência aprovada. */
+.products-page .catalog-layout { display: block; }
+.products-page.catalog-enhanced .catalog-type-filter { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 42px; }
+.products-page .catalog-type-filter legend { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.products-page .catalog-type-filter label { position: relative; display: flex; align-items: center; min-height: 44px; padding: 0; color: #07132e; font-size: 15px; font-weight: 500; }
+.products-page .catalog-type-filter input { position: absolute; width: 1px; height: 1px; margin: 0; opacity: 0; }
+.products-page .catalog-type-filter label span { display: flex; align-items: center; min-height: 44px; padding: 10px 18px; border: 1px solid #dce4f1; background: #fff; }
+.products-page .catalog-type-filter label:hover span { border-color: #092ac6; color: #092ac6; }
+.products-page .catalog-type-filter label:has(input:checked) span { border-color: #092ac6; background: #092ac6; color: #fff; }
+.products-page .catalog-type-filter input:focus-visible + span { outline: 3px solid #092ac6; outline-offset: 3px; }
+.products-page .catalog-type-filter input:focus-visible { outline: none; }
+@media (max-width: 560px) {
+ .products-page .catalog-type-filter label { font-size: 14px; }
+ .products-page .catalog-type-filter label span { padding: 10px 13px; }
+}

@@ -30,3 +30,9 @@
 - Separação dos 36 itens em 12 seções com título e contagem próprios; cada categoria mostra seus três itens juntos, inclusive sem JavaScript.
 - Busca e filtros ocultam seções sem resultados e atualizam a contagem por grupo.
 - Conferidos os 12 grupos, filtro Porcelanas, busca por PL097, estado vazio e ausência de transbordamento horizontal em celular.
+
+### Navegação por botões de categoria
+
+- Substituída a coluna lateral por botões abaixo da busca, conforme referência do usuário.
+- Cada botão mostra somente os três itens da categoria escolhida, com destaque azul; Todas permite consultar o conjunto organizado.
+- Seleção preservada na URL e operável por teclado. Testados os 12 botões, celular de 390 px e contagens dos resultados, sem erros JavaScript observados.
