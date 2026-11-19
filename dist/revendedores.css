@@ -14,6 +14,9 @@
 .reseller-welcome h1 { font-size: clamp(40px,4.2vw,60px); line-height: 1.1; letter-spacing: -.035em; }
 .reseller-welcome-copy p { max-width: 46ch; margin: 24px 0 28px; color: #526079; font-size: 17px; line-height: 1.8; }
 .reseller-welcome-copy .button { font-size: 14px; }
+.reseller-benefits { display: grid; gap: 12px; list-style: none; margin: 0 0 30px; padding: 0; }
+.reseller-benefits li { display: flex; align-items: center; gap: 12px; color: #07132e; font-size: 16px; font-weight: 500; line-height: 1.5; }
+.reseller-benefits svg { color: #092ac6; }
 .reseller-welcome-photo { position: relative; margin: 0; min-height: 390px; border-radius: 12px; overflow: hidden; background: #e3eaf3; }
 .reseller-welcome-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: 48% center; }
 .reseller-welcome-photo figcaption { position: absolute; left: 16px; bottom: 16px; background: #06164f; color: #fff; padding: 5px 9px; border-radius: 3px; font-size: 11px; }

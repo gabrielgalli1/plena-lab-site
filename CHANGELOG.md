@@ -173,3 +173,10 @@
 - PHP validado; conferência visual em computador e celular, imagem carregada e sem overflow em 1440, 1024, 768, 390 e 320 px. Botão chega ao formulário abaixo do cabeçalho; redução de movimento respeitada. Download anônimo permanece 401. Sem erros JavaScript observados na navegação.
 - Taste: GATE: OFF (no build active); conferência realizada diretamente na prévia PHP com Playwright.
 - Alterações locais, sem publicação.
+
+## 18/11/2026 — Checklist de diferenciais no banner
+
+- Incluídos os três diferenciais solicitados pelo usuário: Preços competitivos, Equipe especializada e Materiais de qualidade.
+- Lista semântica com ícones de confirmação decorativos em azul, antes do botão de acesso. Nenhuma condição comercial ou especificação adicional criada.
+- Backup em work/backups/revendedores-beneficios-20261118. PHP sem erro de sintaxe; verificação visual desktop e celular; três itens presentes e sem overflow em 1440, 768, 390 e 320 px. Sem mudanças no processamento de login ou downloads.
+- Alteração salva localmente, sem publicação.
