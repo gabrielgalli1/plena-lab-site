@@ -31,3 +31,7 @@ A página de Catálogo apresenta o PDF institucional fornecido pelo usuário, co
 O usuário autorizou evoluir a antiga reserva visual para acesso comercial restrito com uma credencial compartilhada, mantendo aprovação manual do CNPJ e sem banco de dados. Essa solicitação substitui a restrição anterior de área somente pública para este fluxo específico; não retoma o portal B2B antigo.
 
 Após login, são oferecidos o Excel original e doze PDFs por categoria. Dados comerciais e credenciais ficam fora da raiz pública e do repositório. A senha compartilhada não fornece revogação por empresa e arquivos baixados podem ser redistribuídos. A publicação continua dependendo de autorização expressa, validação de PHP/HTTPS e armazenamento privado na hospedagem real.
+
+## Biblioteca de revendedores — apresentação de 18/11/2026
+
+Área autenticada com Excel em destaque e doze categorias de PDF em diretório visual responsivo. Imagens conceituais existentes representam categorias e são identificadas como ilustrativas; não são miniaturas das listas comerciais. Manter busca, visualização e download pelas rotas PHP protegidas. Nesta etapa não se altera aprovação manual de revendedores, credencial compartilhada nem armazenamento privado.

@@ -151,3 +151,15 @@
 - Regressão HTTP: 13 cenários aprovados; download anônimo respondeu 401.
 - Taste: GATE: OFF (no build active). Gate não validou esta página; verificação realizada diretamente na prévia PHP com Playwright.
 - Alterações locais, sem publicação.
+
+## 18/11/2026 — Biblioteca de revendedores
+
+- Lista completa em Excel destacada em faixa azul com identificação de formato, tamanho e ação de download.
+- Doze PDFs organizados em blocos com imagem ilustrativa por categoria; três colunas no computador, duas em telas intermediárias e uma no celular. Imagens conceituais existentes reaproveitadas; Equipamentos usa imagem ilustrativa de laboratório já existente. Nenhuma miniatura expõe a tabela comercial.
+- Ações Visualizar PDF e Baixar identificadas por categoria para leitores de tela; busca preservada com tratamento de acentos, contagem e estado vazio.
+- Estados de hover, pressão, foco e redução de movimento preservados; apoio comercial integrado ao fim da biblioteca.
+- Backup anterior: work/backups/revendedores-biblioteca-20261118, fora do repositório.
+- PHP sem erros de sintaxe; diff sem erros de whitespace. Playwright: sem overflow em 1440, 1024, 768, 390 e 320 px; busca, vazio, foco por Tab, redução de movimento e 24 links HEAD aprovados, sem erros de console ou execução observados. Download do Excel acionado e cancelado após identificar o arquivo; leitura parcial autenticada do PDF respondeu 206, assinatura PDF e sem cache.
+- Regressão HTTP isolada: 13 cenários de autenticação, expiração, downloads e bloqueio de acesso aprovados.
+- Taste: GATE: OFF (no build active); não houve validação pelo gate. Conferência visual realizada diretamente na prévia PHP com Playwright, em computador e celular.
+- Alterações somente locais; arquivos comerciais e credenciais continuam fora da pasta pública e do Git.
