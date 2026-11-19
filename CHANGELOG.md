@@ -180,3 +180,13 @@
 - Lista semântica com ícones de confirmação decorativos em azul, antes do botão de acesso. Nenhuma condição comercial ou especificação adicional criada.
 - Backup em work/backups/revendedores-beneficios-20261118. PHP sem erro de sintaxe; verificação visual desktop e celular; três itens presentes e sem overflow em 1440, 768, 390 e 320 px. Sem mudanças no processamento de login ou downloads.
 - Alteração salva localmente, sem publicação.
+
+## 18/11/2026 — Menu institucional azul
+
+- Cabeçalho global com fundo #092AC6, links e indicador de página atual em branco; botão de loja branco com texto azul.
+- Logo original preservado, apresentado em branco por composição CSS, sem criar ou substituir a marca. Menu mobile acompanha o azul, controles com foco branco e estados de interação.
+- Atualização da versão da folha global nas páginas e no template PHP para evitar cache antigo; ajuste do foco específico de Produtos.
+- Backup em work/backups/menu-azul-20261118, fora do repositório.
+- Conferência visual desktop e celular. Seis páginas principais responderam 200 com cabeçalho azul e links/foco brancos. Sem overflow em 1440, 1024, 881, 880, 768, 390 e 320 px. Menu abre, fecha por Esc, restaura inert e respeita redução de movimento. Nenhum erro de execução JavaScript observado. Diff sem erros de whitespace.
+- Taste: GATE: OFF (no build active); validação visual direta com Playwright na prévia local.
+- Nenhuma publicação; alterações salvas localmente.

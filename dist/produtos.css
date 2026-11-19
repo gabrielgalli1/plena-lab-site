@@ -10,7 +10,7 @@
 .products-page h1, .products-page h2, .products-page h3 { letter-spacing: -.035em; text-wrap: balance; }
 .products-page button, .products-page input, .products-page a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 .products-page :focus-visible { outline: 3px solid #092ac6; outline-offset: 4px; }
-.products-page .site-header :focus-visible { outline-color: #092ac6; }
+.products-page .site-header :focus-visible { outline-color: #fff; }
 .products-page [tabindex="-1"] { scroll-margin-top: 110px; }
 .products-page svg { width: 21px; height: 21px; flex: 0 0 auto; }
 .catalog-intro { padding: 126px 0 48px; background: #fff; }
