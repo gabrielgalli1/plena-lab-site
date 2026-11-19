@@ -163,3 +163,13 @@
 - Regressão HTTP isolada: 13 cenários de autenticação, expiração, downloads e bloqueio de acesso aprovados.
 - Taste: GATE: OFF (no build active); não houve validação pelo gate. Conferência visual realizada diretamente na prévia PHP com Playwright, em computador e celular.
 - Alterações somente locais; arquivos comerciais e credenciais continuam fora da pasta pública e do Git.
+
+## 18/11/2026 — Banner de boas-vindas aos revendedores
+
+- Banner público antes da introdução: Para quem leva a Plena-Lab mais longe, mensagem dirigida à revenda e botão de acesso direto ao formulário.
+- Imagem ilustrativa de trabalho com vidro já existente no projeto, com identificação visível; introdução, login e biblioteca preservados.
+- Um único h1; título anterior passa a h2. Âncora do formulário com distância do cabeçalho fixo. Biblioteca autenticada continua abrindo diretamente nos materiais.
+- Backup anterior: work/backups/revendedores-banner-20261118, fora do Git.
+- PHP validado; conferência visual em computador e celular, imagem carregada e sem overflow em 1440, 1024, 768, 390 e 320 px. Botão chega ao formulário abaixo do cabeçalho; redução de movimento respeitada. Download anônimo permanece 401. Sem erros JavaScript observados na navegação.
+- Taste: GATE: OFF (no build active); conferência realizada diretamente na prévia PHP com Playwright.
+- Alterações locais, sem publicação.
