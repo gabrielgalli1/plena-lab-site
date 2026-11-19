@@ -8,28 +8,45 @@
 .reseller-page .button { border-radius: 4px; gap: 18px; }
 .reseller-page .button:disabled { cursor: not-allowed; background: #d9dfed; color: #46546e; transform: none; }
 .reseller-page .footer-brand img { filter: none; background: #fff; padding: 10px; border-radius: 3px; }
-.reseller-entry { padding: 152px 0 90px; }
-.reseller-entry-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 90px; align-items: start; }
-.reseller-intro h1 { font-size: clamp(44px,4.6vw,66px); line-height: 1.08; }
-.reseller-intro > p { max-width: 43ch; margin-top: 28px; color: #526079; font-size: 18px; line-height: 1.8; }
-.reseller-process { max-width: 47ch; margin-top: 44px; padding-top: 26px; border-top: 1px solid #dce4f1; }
-.reseller-process h2 { font-size: 19px; line-height: 1.4; }
-.reseller-process ol { margin: 20px 0; padding-left: 20px; color: #526079; font-size: 15px; line-height: 1.8; }
-.reseller-process li { padding-left: 8px; margin-bottom: 12px; }
-.reseller-process li::marker { color: #092ac6; }
+.reseller-entry { padding: 132px 0 56px; background: #f2f5fb; }
+.reseller-entry-grid { display: grid; grid-template-columns: 1.12fr 1fr; gap: 0; align-items: stretch; border-radius: 14px; overflow: hidden; box-shadow: 0 18px 48px rgba(6,22,79,.07); }
+.reseller-intro { display: flex; flex-direction: column; background: #06164f; color: #fff; min-width: 0; }
+.reseller-intro-copy { padding: 46px 44px 36px; }
+.reseller-intro h1 { font-size: clamp(38px,3.7vw,53px); line-height: 1.12; letter-spacing: -.035em; }
+.reseller-intro-copy > p { max-width: 36ch; margin-top: 22px; color: #ced8f4; font-size: 17px; line-height: 1.75; }
+.reseller-entry-photo { position: relative; flex: 1; min-height: 256px; overflow: hidden; margin: 0; background: #e3eaf3; }
+.reseller-entry-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: 37% center; }
+.reseller-entry-photo figcaption { position: absolute; bottom: 14px; left: 18px; padding: 5px 9px; border-radius: 3px; background: #06164f; color: #e5ebfc; font-size: 11px; }
+.reseller-onboarding { padding: 58px 0 76px; }
+.reseller-process-heading { display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+.reseller-process-heading h2 { font-size: 30px; line-height: 1.2; }
+.reseller-process-heading p { margin-top: 14px; color: #526079; font-size: 16px; }
+.reseller-steps { counter-reset: access; display: grid; grid-template-columns: repeat(3,1fr); gap: 36px; list-style: none; padding: 0; margin: 36px 0 0; }
+.reseller-steps li { counter-increment: access; position: relative; padding: 26px 0 0 48px; border-top: 1px solid #dce4f1; }
+.reseller-steps li::before { content: counter(access); position: absolute; top: 24px; left: 0; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; background: #edf2ff; color: #092ac6; font-size: 13px; font-weight: 700; }
+.reseller-steps h3 { font-size: 17px; line-height: 1.5; letter-spacing: -.02em; }
+.reseller-steps p { margin-top: 10px; color: #526079; font-size: 14px; line-height: 1.8; max-width: 34ch; }
 .reseller-request { display: inline-flex; min-height: 44px; align-items: center; gap: 20px; color: #092ac6; font-size: 14px; font-weight: 600; text-underline-offset: 4px; }
 .reseller-request:hover { text-decoration: underline; }
-.reseller-login { padding: 38px; background: #f4f7fc; border-radius: 8px; }
-.reseller-lock { display: block; width: 32px !important; height: 32px !important; margin-bottom: 26px; color: #092ac6; }
-.reseller-login h2 { font-size: clamp(27px,2.5vw,34px); line-height: 1.15; }
+.reseller-login { padding: 42px 46px; background: #fff; }
+.reseller-lock { display: block; box-sizing: content-box; padding: 11px; background: #edf2ff; border-radius: 12px; width: 26px !important; height: 26px !important; margin-bottom: 24px; color: #092ac6; }
+.reseller-login h2 { font-size: 30px; line-height: 1.2; }
 .reseller-login > p { margin-top: 18px; color: #526079; font-size: 15px; line-height: 1.75; }
 .reseller-login-form { margin-top: 28px; }
 .reseller-field { margin-bottom: 22px; }
 .reseller-field label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 600; }
 .reseller-field input { width: 100%; min-width: 0; min-height: 52px; border: 1px solid #c9d4e6; border-radius: 4px; padding: 12px 14px; background: #fff; color: #07132e; font: inherit; }
-.reseller-password { display: flex; align-items: stretch; gap: 6px; }
+.reseller-field input { caret-color: #092ac6; transition: border-color .18s, box-shadow .18s; }
+.reseller-field input:hover { border-color: #7789ae; }
+.reseller-field input:focus-visible { border-color: #092ac6; outline: 2px solid #092ac6; outline-offset: 3px; }
+.reseller-password { position: relative; display: flex; align-items: stretch; gap: 0; }
 .reseller-password input { flex: 1; }
-.reseller-password button { flex: 0 0 70px; border: 0; background: transparent; color: #092ac6; font: inherit; font-size: 13px; cursor: pointer; }
+.reseller-password:has(button:not([hidden])) input { padding-right: 84px; }
+.reseller-password button { position: absolute; right: 5px; top: 4px; bottom: 4px; min-width: 70px; border: 0; border-radius: 3px; background: transparent; color: #092ac6; font: inherit; font-size: 13px; cursor: pointer; }
+.reseller-password button:hover { background: #edf2ff; }
+.reseller-submit { transition: background .18s, transform .18s; }
+.reseller-submit:hover:not(:disabled) { background: #071fa0; transform: translateY(-1px); }
+.reseller-submit:active:not(:disabled) { transform: translateY(1px); }
 .reseller-submit { width: 100%; justify-content: space-between; font-size: 14px; }
 .reseller-help { margin-top: 24px !important; font-size: 13px !important; }
 .reseller-help a { color: #092ac6; text-decoration: underline; text-underline-offset: 3px; }
@@ -70,19 +87,28 @@
 .reseller-support h2 { font-size: 28px; line-height: 1.25; }
 .reseller-support p { margin-top: 14px; color: #526079; font-size: 15px; }
 @media(max-width:1050px) {
- .reseller-entry-grid { gap: 42px; }
- .reseller-login { padding: 30px; }
+ .reseller-intro-copy { padding: 36px 28px; }
+ .reseller-login { padding: 36px 28px; }
+ .reseller-steps { gap: 24px; }
  .reseller-files { column-gap: 32px; }
  .reseller-file { gap: 16px; }
  .reseller-file-actions { gap: 10px; }
 }
 @media(max-width:760px) {
- .reseller-entry { padding: 112px 0 56px; }
- .reseller-entry-grid { grid-template-columns: 1fr; gap: 36px; }
- .reseller-intro h1 { font-size: clamp(42px,8vw,58px); }
- .reseller-intro > p { font-size: 16px; }
- .reseller-process { margin-top: 30px; }
- .reseller-login { padding: 26px; }
+ .reseller-entry { padding: 98px 0 32px; }
+ .reseller-entry-grid { grid-template-columns: 1fr; }
+ .reseller-intro-copy { padding: 30px 26px; }
+ .reseller-intro h1 { font-size: clamp(34px,7vw,46px); }
+ .reseller-intro-copy > p { font-size: 16px; margin-top: 16px; }
+ .reseller-entry-photo { min-height: 180px; }
+ .reseller-entry-photo img { object-position: center; }
+ .reseller-login { padding: 30px 26px; }
+ .reseller-login h2 { font-size: 27px; }
+ .reseller-onboarding { padding: 40px 0 48px; }
+ .reseller-process-heading { align-items: start; flex-direction: column; gap: 18px; }
+ .reseller-process-heading h2 { font-size: 27px; }
+ .reseller-steps { grid-template-columns: 1fr; gap: 22px; margin-top: 24px; }
+ .reseller-steps p { max-width: 48ch; }
  .reseller-library { padding: 108px 0 48px; }
  .reseller-library-heading { flex-direction: column; gap: 14px; }
  .reseller-library-heading p { font-size: 16px; margin-top: 20px; }

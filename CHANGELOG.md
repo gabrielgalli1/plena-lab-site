@@ -140,3 +140,14 @@
 - Suíte HTTP isolada com arquivos fictícios: 13 cenários aprovados, incluindo ausência de autenticação, CSRF, treze downloads íntegros, range, logout, expiração, troca de senha, limite persistente sem cookie, configuração encerrada e cookie Secure fora do ambiente local.
 - Teste adicional com os treze documentos reais: downloads completos autenticados, bloqueio anônimo e após logout, PDF inline, busca, telas desktop/mobile e larguras 320/390/768/1024/1440 sem transbordamento. Arquivos inacessíveis por caminhos diretos. Sessões de teste não reutilizadas para acesso real.
 - PHP portátil validado pelo SHA256 oficial, sem instalação global. Arquivos de runtime e dados privados não versionados. Backup anterior em tag.
+
+## 18/11/2026 — Nova apresentação da entrada de revendedores
+
+- Composição integrada: título e imagem ilustrativa existente à esquerda; formulário branco à direita, preservando autenticação e armazenamento privado.
+- Etapas de solicitação de acesso movidas para seção própria, com aprovação manual do CNPJ e contato existente.
+- Campos, controle de senha, estados de interação e responsividade refinados. Biblioteca interna preservada nesta etapa.
+- Backup anterior em work/backups/revendedores-entrada-20261118 (fora do repositório).
+- Verificação visual desktop e celular; sem overflow em 1440, 1024, 768, 390 e 320 px. Imagem carregada, foco visível, mostrar/ocultar senha e redução de movimento conferidos; nenhum erro de execução JavaScript observado. PHP sem erro de sintaxe.
+- Regressão HTTP: 13 cenários aprovados; download anônimo respondeu 401.
+- Taste: GATE: OFF (no build active). Gate não validou esta página; verificação realizada diretamente na prévia PHP com Playwright.
+- Alterações locais, sem publicação.
