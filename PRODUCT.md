@@ -39,3 +39,7 @@ Após login, são oferecidos o Excel original e doze PDFs por categoria. Dados c
 ## Cabeçalho aprovado — 18/11/2026
 
 Menu global azul #092AC6, logo e navegação brancos, página atual sublinhada em branco e ação da loja com fundo branco/texto azul. Padrão também aplicado ao menu mobile. Marca original mantida; mudança autorizada pelo usuário.
+
+## Prévia de padronização visual — 19/11/2026
+
+O usuário autorizou aplicar para avaliação a proposta de fonte única Manrope, escala de títulos consistente, paleta reduzida, botões uniformes e retorno ao cabeçalho branco. Esta prévia substitui o cabeçalho azul autorizado no dia anterior. Regras compartilhadas em dist/sistema-visual.css e documentação em DESIGN.md. Conteúdos, arquitetura, categorias, catálogo, experiência do béquer e acesso reservado permanecem no projeto existente. A avaliação estética final e a publicação continuam dependendo do usuário.

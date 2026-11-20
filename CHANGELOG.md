@@ -190,3 +190,16 @@
 - Conferência visual desktop e celular. Seis páginas principais responderam 200 com cabeçalho azul e links/foco brancos. Sem overflow em 1440, 1024, 881, 880, 768, 390 e 320 px. Menu abre, fecha por Esc, restaura inert e respeita redução de movimento. Nenhum erro de execução JavaScript observado. Diff sem erros de whitespace.
 - Taste: GATE: OFF (no build active); validação visual direta com Playwright na prévia local.
 - Nenhuma publicação; alterações salvas localmente.
+
+## 19/11/2026 — Prévia com padrão visual compartilhado
+
+- Aplicada a direção autorizada pelo usuário: fonte única Manrope, cabeçalho branco, branco predominante, azul da marca e neutros consistentes.
+- Criado dist/sistema-visual.css, carregado por último em todas as páginas e no template de revendedores. Paleta equivalente das folhas específicas consolidada em variáveis compartilhadas, sem alterar fotografias ou PDFs.
+- Títulos de abertura 56/44/36 px conforme largura; seções 36/32/28 px; títulos de componente 28/24 px; texto de leitura 16 px e botões 14 px, mínimo de 52 px e raio de 6 px. Metadados preservam escala compacta conforme sua função.
+- Blocos de atendimento, revenda e Excel usam o mesmo fundo claro com ações azuis. Experiência do béquer e seção de fabricação preservadas. Logo original mantido, sem filtro branco.
+- Padrão documentado em DESIGN.md para orientar próximas alterações.
+- Backup integral da pasta pública e do template em work/backups/padronizacao-visual-20261119; tag backup-antes-padronizacao-visual-20261119.
+- Verificação: seis páginas com HTTP 200, Manrope e títulos/botões conforme os tokens. Sem overflow em 1440, 1024, 768, 390 e 320 px. Biblioteca autenticada também conferida em 1440/768/390/320 px, com 12 categorias, busca, login e logout funcionando. Produto da categoria Porcelanas abre com título em escala de seção; PDF público responde 200; menu mobile branco abre, fecha por Esc e mantém foco visível. Redução de movimento respeitada. PHP sem erro de sintaxe; 13 testes HTTP de proteção da revenda aprovados; nenhum erro JavaScript observado.
+- Capturas visuais após carregamento de fontes/imagens; animações finitas desativadas somente na captura para registrar o estado final, sem alteração do funcionamento da página.
+- Taste: GATE: OFF (no build active); validação realizada diretamente no servidor PHP com Playwright, sem declaração de aprovação do gate.
+- Prévia salva localmente para avaliação; sem publicação ou envio ao GitHub.
