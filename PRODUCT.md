@@ -35,7 +35,3 @@ Após login, são oferecidos o Excel original e doze PDFs por categoria. Dados c
 ## Biblioteca de revendedores — apresentação de 18/11/2026
 
 Área autenticada com Excel em destaque e doze categorias de PDF em diretório visual responsivo. Imagens conceituais existentes representam categorias e são identificadas como ilustrativas; não são miniaturas das listas comerciais. Manter busca, visualização e download pelas rotas PHP protegidas. Nesta etapa não se altera aprovação manual de revendedores, credencial compartilhada nem armazenamento privado.
-
-## Cabeçalho aprovado — 18/11/2026
-
-Menu global azul #092AC6, logo e navegação brancos, página atual sublinhada em branco e ação da loja com fundo branco/texto azul. Padrão também aplicado ao menu mobile. Marca original mantida; mudança autorizada pelo usuário.

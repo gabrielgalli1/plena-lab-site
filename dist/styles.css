@@ -62,25 +62,3 @@
 /* Escala do béquer real */
 .beaker-stage img{width:min(110%,580px)}@media(max-width:560px){.beaker-stage img{width:min(92vw,420px)}}
 
-/* Cabeçalho institucional na cor da marca. A marca original é preservada. */
-.site-header { background: #092ac6; color: #fff; border-bottom-color: rgba(255,255,255,.18); backdrop-filter: none; }
-.site-header.is-scrolled { box-shadow: 0 8px 26px rgba(6,22,79,.16); }
-.site-header .brand img { filter: grayscale(1) invert(1) brightness(1.4); mix-blend-mode: screen; }
-.site-header .desktop-nav a { color: #fff; }
-.site-header .desktop-nav a::after { background: #fff; }
-.site-header .store-link { background: #fff; color: #092ac6; transition: background .18s, transform .18s; }
-.site-header .store-link:hover { background: #eaf0ff; transform: translateY(-1px); }
-.site-header .store-link:active { transform: translateY(1px); }
-.site-header .menu-trigger { background: transparent; border: 1px solid rgba(255,255,255,.45); border-radius: 4px; }
-.site-header .menu-trigger span { background: #fff; }
-.site-header .menu-trigger:hover { background: rgba(255,255,255,.12); }
-.site-header .mobile-panel { background: #092ac6; color: #fff; }
-.site-header .mobile-panel.is-open { border-top-color: rgba(255,255,255,.22); }
-.site-header .mobile-panel nav a { color: #fff; border-bottom-color: rgba(255,255,255,.22); }
-.site-header .mobile-panel nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 8px; text-decoration-thickness: 2px; }
-.site-header .mobile-panel .button { background: #fff; color: #092ac6; }
-.site-header .mobile-panel .button:hover { background: #eaf0ff; }
-.site-header :focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
-.site-header .nav-shell :focus-visible, .site-header .mobile-panel :focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
-.site-header .store-link:focus-visible, .site-header .mobile-panel .button:focus-visible { outline-color: #fff; }
-
