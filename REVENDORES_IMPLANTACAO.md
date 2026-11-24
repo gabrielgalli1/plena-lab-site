@@ -49,6 +49,8 @@ A senha é solicitada de forma oculta, confirmada e enviada ao PHP pela entrada 
 
 ## Atualização das listas
 
+Ao trocar a planilha, atualize também a entrada `excel` de `app/revenda/documentos.json`. Informe o ano da tabela em `edition_year` e a data da revisão comercial em `updated_on` no formato `AAAA-MM-DD`. Use `null` nos campos ainda sem confirmação.
+
 Manter backup privado da versão anterior. Atualizar os arquivos em `files/`, respeitando os nomes do manifesto. Preferir envio temporário seguido de troca atômica para evitar downloads incompletos durante atualização. O tamanho é calculado pelo servidor a cada consulta; se o PDF mudar de número de páginas ou a categoria mudar, atualizar o manifesto e revisar antes da liberação. Não oferecer upload para a credencial compartilhada.
 
 O catálogo público de 2026 permanece separado dessas tabelas. Não colocar o Excel ou os PDFs comerciais na pasta pública de downloads nem em URLs externas compartilháveis.

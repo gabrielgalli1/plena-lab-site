@@ -23,5 +23,18 @@ function filterProducts(){if(!productCards.length)return;const term=normalize(se
 search?.addEventListener('input',filterProducts);chips.forEach(chip=>chip.addEventListener('click',()=>{activeCategory=chip.dataset.filter;chips.forEach(item=>{const active=item===chip;item.classList.toggle('is-active',active);item.setAttribute('aria-pressed',String(active))});filterProducts()}));
 const initialCategory=new URLSearchParams(location.search).get('categoria');if(initialCategory){const chip=chips.find(item=>item.dataset.filter===initialCategory);chip?.click()}filterProducts();
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=String(new Date().getFullYear()));
-const contactForm=document.querySelector('[data-contact-form]');contactForm?.addEventListener('submit',event=>{event.preventDefault();showToast('Formulário demonstrativo. Na publicação, ele será conectado ao canal definido pela Plena-Lab.')});
-
+const contactWhatsApp = document.querySelector('[data-contact-whatsapp]');
+if (contactWhatsApp) {
+  const contactTopics = new Map([
+    ['produtos', 'produtos'],
+    ['especial', 'fabricação especial'],
+    ['calibracao', 'calibração'],
+    ['revenda', 'revenda'],
+  ]);
+  const topic = contactTopics.get(new URLSearchParams(location.search).get('assunto'));
+  if (topic) {
+    const url = new URL(contactWhatsApp.href);
+    url.searchParams.set('text', 'Olá! Gostaria de falar com a Plena-Lab sobre ' + topic + '.');
+    contactWhatsApp.href = url.href;
+  }
+}

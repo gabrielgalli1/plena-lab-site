@@ -188,3 +188,61 @@
 - Preparação da atualização da branch main do repositório existente, preservando o histórico remoto e os commits locais. Sem autorização ou execução de publicação na hospedagem.
 - Verificação prévia: 64 arquivos rastreados; 142 blobs de texto do histórico examinados, sem sinais dos padrões de credenciais verificados nem caminhos de arquivos privados. Único PDF versionado: catálogo institucional público. Listas comerciais e configuração privada permanecem fora do Git.
 - Regressão HTTP da área de revendedores: 13 cenários aprovados.
+
+## 24/11/2026 — Atalhos da Home e atendimento
+
+- Corrigidos os atalhos para Vidrarias, Equipamentos em PP e Acessórios; atualizados os textos sobre o Catálogo 2026 e a área de revenda.
+- O formulário abre o WhatsApp com a mensagem preenchida para revisão. Os atalhos da Home preenchem o assunto de fabricação especial ou calibração.
+
+## 24/11/2026 — Revisão visual e peso das imagens
+
+- Unificada a tipografia em Manrope (400–800), com escala compartilhada, notas de pelo menos 13 px e títulos mais compactos. Versionadas as referências de CSS.
+- Encurtadas a abertura da Home, a sequência do béquer e as seções institucionais. A foto principal aparece na primeira tela do celular e as ilustrações dos cartões têm espaço abaixo dos botões.
+- Aplicada a marca original sem fundo e sem frase no cabeçalho e no rodapé. Adicionados ícones de linha aos itens sem foto e imagens conceituais distintas para portfólio e fabricação. Mantidos os avisos de conteúdo ilustrativo ou demonstrativo.
+- Convertidos a foto principal e o béquer para WebP, com redução conjunta de 2.965.288 para 199.602 bytes. Oito PNGs originais foram movidos para `artwork/originais`, fora da pasta publicada.
+- Home de 9.983 para 6.635 px em 1440 × 900 e de 10.472 para 7.503 px em 375 × 812. Páginas e estados verificados no Chrome, incluindo a biblioteca de revenda com arquivos fictícios, sem rolagem horizontal ou imagens quebradas.
+
+## 24/11/2026 — Favicon
+
+- Aplicado em todas as páginas o PNG transparente de 96 × 96 px fornecido para a prévia local.
+- Substituído pela versão branca fornecida para comparação na prévia local.
+- Restaurada a versão azul do favicon após avaliação da prévia.
+- O favicon acompanha a preferência de tema do navegador, com a versão azul no modo claro e a branca no escuro.
+
+## 24/11/2026 — Página de Contato
+
+- Compactada a abertura com destaque para o WhatsApp e acesso direto ao telefone e e-mail. Formulário ao lado dos canais em telas largas e logo abaixo no celular.
+- Separados o endereço e o horário em um bloco com mapa interativo do Google e link de rota. O mapa é carregado sob demanda ao aproximar-se da seção.
+- Aplicada a animação existente de entrada ao formulário e à localização, respeitando a preferência de movimento reduzido. Preservados o assunto pré-selecionado e a mensagem revisável no WhatsApp.
+
+### Canais de atendimento
+
+- Substituído o formulário por dois cartões de contato. Vendas e orçamentos reúne o WhatsApp e o e-mail já divulgado, e Atendimento por telefone oferece os dois fixos informados e o horário.
+- Incluído um link para o Instagram institucional `@plenalab`, com o bloco de localização e o mapa preservados.
+- Os atalhos de fabricação especial, calibração e revenda continuam preparando o assunto no WhatsApp para revisão pelo visitante.
+- Criada a seção de redes sociais com destaque para o Instagram principal `@lojaplenalab`, ao lado do Instagram institucional `@plenalab` e do Facebook `lojaplenalab`.
+- O cartão comercial passou a indicar que o WhatsApp e o e-mail também atendem dúvidas sobre produtos e pedidos.
+- Atualizado o horário de atendimento e localização para segunda a sexta, das 8h às 17h30.
+- Realçado o WhatsApp, alinhadas as linhas de contato entre os cartões em telas largas e reduzido o espaço acima do mapa.
+
+### Cabeçalho
+
+- Marca do cabeçalho dimensionada de forma compacta e menu centralizado no computador. Botão da loja e menu móvel preservados.
+- Aplicado no cabeçalho o novo PNG transparente fornecido, com ajuste visual da margem interna no computador e no celular.
+- Aplicado efeito de vidro ao cabeçalho, com fundo translúcido na rolagem e opção opaca para preferência por transparência reduzida.
+
+### Abertura das páginas internas
+
+- Catálogo, Revendedores e Contato passaram a usar a abertura compartilhada de A Plena-Lab e Produtos. A foto, as ações e o conteúdo próprio de cada página aparecem na sequência.
+- Reaplicado o fade-up existente às aberturas e aos blocos de Catálogo, Revendedores e Contato. O conteúdo permanece visível com movimento reduzido, foco de teclado ou JavaScript desativado.
+
+### Acesso para revendedores
+
+- Criada a prévia dos botões Já tenho acesso e Quero ser revendedor. Eles levam ao login existente e às orientações de solicitação pelo WhatsApp.
+- Aproximados os dois botões do texto de abertura. Os três diferenciais passaram a aparecer em sequência ao lado de uma imagem ilustrativa de embalagem para revenda.
+- Encurtada a descrição da abertura e reduzidos os botões de acesso da página de Revendedores.
+- Compactado o bloco de login para manter o formulário e o botão Entrar visíveis ao chegar pelo atalho em janelas mais baixas.
+- Atualizado o painel do login para apresentar as listas comerciais em Excel e PDF. Ajustados o enquadramento da foto e o aviso de acesso em preparação.
+- Reorganizada a solicitação de acesso em três cartões animados em sequência, ligados por uma linha pontilhada. O botão de WhatsApp aparece abaixo das etapas.
+- Simplificadas as etapas de solicitação em uma linha do tempo conectada aos números, com intervalo maior entre as entradas nessa seção.
+- Área reservada com planilha em destaque, ano e data de atualização, busca mais próxima do topo e cartões de PDF compactos no celular. Arquivos indisponíveis exibem um aviso no lugar do tamanho.
