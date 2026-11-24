@@ -261,3 +261,9 @@
 - O rodapé do Catálogo passou a vir logo após o quadro de certificados.
 - Botões do PDF e do WhatsApp padronizados, capa sem botão duplicado e atalhos do índice com entrada em sequência.
 - Capa do PDF reduzida e agrupada com o índice em uma faixa clara, separada dos quadros de serviços.
+
+### A Plena-Lab
+
+- Página institucional reorganizada em Quem somos, Missão, visão e valores, Segmentos atendidos, Compromisso com a qualidade e Seja nosso parceiro.
+- Indicadores de tempo de mercado, clientes e produtos em uma faixa azul-marinho, com contagem de 2,4 segundos ao entrar na tela e valores disponíveis com movimento reduzido ou sem JavaScript.
+- Layout responsivo com imagens de fabricação e calibração e sem título fixo sobre o texto em telas estreitas.
