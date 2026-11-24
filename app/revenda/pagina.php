@@ -1,4 +1,4 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Área de revendedores | Plena-Lab</title><meta name="robots" content="noindex,nofollow"><meta name="description" content="Acesso reservado aos materiais comerciais para revendedores autorizados da Plena-Lab."><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-plena-lab.png?v=3"><script src="/favicon.js" defer></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=20261124-animacoes"><link rel="stylesheet" href="revendedores.css?v=20261124-listas-comerciais"></head><body class="reseller-page"><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><header class="site-header" data-header><div class="container nav-shell"><a class="brand" href="index.html"><img src="assets/logo-plenalab-cabecalho.png" width="384" height="160" alt="Plena-Lab"></a><nav class="desktop-nav" aria-label="Navegação principal"><a href="sobre.html">A Plena-Lab</a><a href="produtos.html">Produtos</a><a href="catalogo.html">Catálogo</a><a href="revendedores.php">Revendedores</a><a href="contato.html">Contato</a></nav><div class="nav-actions"><a class="store-link" href="https://www.lojaplenalab.com.br/" target="_blank" rel="noopener">Acessar loja ↗</a><button class="menu-trigger" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button></div></div><div class="mobile-panel" id="mobile-menu" aria-hidden="true" inert><nav><a href="index.html">Início</a><a href="sobre.html">A Plena-Lab</a><a href="produtos.html">Produtos</a><a href="catalogo.html">Catálogo</a><a href="revendedores.php">Revendedores</a><a href="contato.html">Contato</a></nav><a class="button button-primary" href="https://www.lojaplenalab.com.br/" target="_blank" rel="noopener">Acessar loja virtual</a></div></header><main id="conteudo">
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Área de revendedores | Plena-Lab</title><meta name="robots" content="noindex,nofollow"><meta name="description" content="Acesso reservado aos materiais comerciais para revendedores autorizados da Plena-Lab."><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-plena-lab.png?v=3"><script src="/favicon.js" defer></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=20261124-animacoes"><link rel="stylesheet" href="revendedores.css?v=20261124-pedidos-revenda"></head><body class="reseller-page"><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><header class="site-header" data-header><div class="container nav-shell"><a class="brand" href="index.html"><img src="assets/logo-plenalab-cabecalho.png" width="384" height="160" alt="Plena-Lab"></a><nav class="desktop-nav" aria-label="Navegação principal"><a href="sobre.html">A Plena-Lab</a><a href="produtos.html">Produtos</a><a href="catalogo.html">Catálogo</a><a href="revendedores.php">Revendedores</a><a href="contato.html">Contato</a></nav><div class="nav-actions"><a class="store-link" href="https://www.lojaplenalab.com.br/" target="_blank" rel="noopener">Acessar loja ↗</a><button class="menu-trigger" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button></div></div><div class="mobile-panel" id="mobile-menu" aria-hidden="true" inert><nav><a href="index.html">Início</a><a href="sobre.html">A Plena-Lab</a><a href="produtos.html">Produtos</a><a href="catalogo.html">Catálogo</a><a href="revendedores.php">Revendedores</a><a href="contato.html">Contato</a></nav><a class="button button-primary" href="https://www.lojaplenalab.com.br/" target="_blank" rel="noopener">Acessar loja virtual</a></div></header><main id="conteudo">
 <?php if (!$authenticated): ?>
 <section class="page-hero" aria-labelledby="reseller-welcome-title">
  <div class="container page-hero-grid">
@@ -62,6 +62,8 @@
  <?php
  $excel = $documents[0];
  $editionYear = $excel['edition_year'] ?? null;
+ $editionReference = $editionYear === null ? '' : ' de ' . $editionYear;
+ $whatsAppMessage = 'Olá, sou revendedor e tenho uma dúvida sobre a lista comercial' . $editionReference . '.';
  $updatedOn = $excel['updated_on'] ?? null;
  $updatedDate = is_string($updatedOn) && preg_match('/^\d{4}-\d{2}-\d{2}$/D', $updatedOn)
      ? DateTimeImmutable::createFromFormat('!Y-m-d', $updatedOn) : false;
@@ -72,10 +74,13 @@
    <h2>Tabela completa em Excel</h2>
    <dl class="reseller-excel-meta">
     <div><dt>Ano da tabela</dt><dd><?= $editionYear === null ? 'A confirmar' : rv_escape((string)$editionYear) ?></dd></div>
-    <div><dt>Última atualização</dt><dd><?php if ($updatedDate && $updatedDate->format('Y-m-d') === $updatedOn): ?><time datetime="<?= rv_escape($updatedOn) ?>"><?= $updatedDate->format('d/m/Y') ?></time><?php else: ?>A confirmar<?php endif; ?></dd></div>
    </dl>
+   <a class="reseller-excel-help" href="https://wa.me/5511947092039?text=<?= rawurlencode($whatsAppMessage) ?>" target="_blank" rel="noopener">Tirar dúvidas pelo WhatsApp</a>
   </div>
   <div class="reseller-excel-action">
+   <dl class="reseller-excel-meta">
+    <div><dt>Última atualização</dt><dd><?php if ($updatedDate && $updatedDate->format('Y-m-d') === $updatedOn): ?><time datetime="<?= rv_escape($updatedOn) ?>"><?= $updatedDate->format('d/m/Y') ?></time><?php else: ?>A confirmar<?php endif; ?></dd></div>
+   </dl>
    <?php if ($excel['available']): ?>
     <a class="button reseller-excel-download" href="arquivo-revenda.php?id=excel" download>Baixar lista em Excel <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg></a>
     <p class="reseller-excel-size">XLSX · <?= rv_escape(rv_size($excel['bytes'])) ?></p>
@@ -92,7 +97,20 @@
  <?php endforeach; ?>
  </div><p class="reseller-empty" data-file-empty hidden>Nenhuma categoria encontrada. Tente outro nome.</p>
  <p class="reseller-commercial-note">Imagens ilustrativas das categorias; composições de produtos geradas por IA. Materiais de uso exclusivo de revendedores autorizados. Confirme as condições comerciais e a disponibilidade dos itens com a Plena-Lab.</p>
- <div class="reseller-support"><div><h2>Vamos preparar seu próximo pedido?</h2><p>Nossa equipe está à disposição para ajudar.</p></div><a class="button button-primary" href="contato.html?assunto=revenda">Falar com a equipe</a></div>
+ <?php $orderMessage = "Olá! Sou revendedor da Plena-Lab e gostaria de fazer um pedido.\n\nCódigo do produto:\nQuantidade:"; ?>
+ <section class="reseller-support" aria-labelledby="reseller-order-title">
+  <div class="reseller-order-icon" aria-hidden="true">
+   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5H6a2 2 0 0 0-2 2v13a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2h-2M8 12h8m-8 4h6"/><rect x="8" y="3" width="8" height="4" rx="1"/></svg>
+  </div>
+  <div class="reseller-order-copy">
+   <h2 id="reseller-order-title">Como enviar um pedido</h2>
+   <p>Selecione os itens na tabela comercial. Envie pelo WhatsApp o <strong>código e a quantidade de cada item</strong>.</p>
+  </div>
+  <a class="button button-primary reseller-order-action" href="https://wa.me/5511947092039?text=<?= rawurlencode($orderMessage) ?>" target="_blank" rel="noopener">
+   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.7a8.2 8.2 0 0 1-12.1 7.2l-4.7 1.3 1.3-4.5a8.2 8.2 0 1 1 15.5-4ZM9 8.3c.4 3 2 4.8 5 5.6l1.2-1"/></svg>
+   Enviar pedido pelo WhatsApp
+  </a>
+ </section>
 </div></section>
 <?php endif; ?>
 </main><footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/logo-plenalab-marca.png" alt="Plena-Lab"><p>Vidrarias e soluções para laboratórios.</p></div><nav><strong>Institucional</strong><a href="sobre.html">A Plena-Lab</a><a href="produtos.html">Produtos</a><a href="catalogo.html">Catálogo</a></nav><nav><strong>Atendimento</strong><a href="revendedores.php">Revendedores</a><a href="contato.html">Contato</a><a href="https://www.lojaplenalab.com.br/">Loja virtual ↗</a></nav><address><strong>Plena-Lab</strong><span>Rua Itaqueri, 1100 — Mooca</span><span>São Paulo — SP</span><a href="tel:+551126014660">(11) 2601-4660</a></address></div><div class="container footer-bottom"><span>© <span data-year>2026</span> Plena-Lab.</span><span>Plena-Lab · Relacionamento com revendedores.</span></div></footer><script src="app.js"></script><script src="revendedores.js"></script></body></html>

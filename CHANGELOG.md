@@ -246,3 +246,18 @@
 - Reorganizada a solicitação de acesso em três cartões animados em sequência, ligados por uma linha pontilhada. O botão de WhatsApp aparece abaixo das etapas.
 - Simplificadas as etapas de solicitação em uma linha do tempo conectada aos números, com intervalo maior entre as entradas nessa seção.
 - Área reservada com planilha em destaque, ano e data de atualização, busca mais próxima do topo e cartões de PDF compactos no celular. Arquivos indisponíveis exibem um aviso no lugar do tamanho.
+- Data de atualização junto ao download da planilha e atalho de WhatsApp com mensagem sobre a lista comercial.
+- Quadro de orientação para pedidos com mensagem de WhatsApp pronta para informar código e quantidade.
+
+### Catálogo
+
+- Quadro sobre certificados de calibração após o índice, com consulta por WhatsApp para informar modelo e capacidade.
+- Quadro de calibração reorganizado com imagem e explicações de Certificado Selo RBC e Certificado Rastreável RBC.
+- Exemplos dos dois certificados sobre o canto inferior direito da foto da bancada no quadro de calibração.
+- Chamada de vidrarias sob medida entre o índice e os certificados, com consulta de fabricação pelo WhatsApp.
+- Índice do catálogo mais compacto e próximo ao bloco do PDF, com os oito atalhos de seção.
+- Bloco de vidrarias sob medida com imagem ilustrativa da fabricação e ação de consulta junto ao texto.
+- Bloco de vidrarias sob medida em formato de pergunta e resposta, com as referências aceitas para fabricação e apresentação em azul-marinho.
+- O rodapé do Catálogo passou a vir logo após o quadro de certificados.
+- Botões do PDF e do WhatsApp padronizados, capa sem botão duplicado e atalhos do índice com entrada em sequência.
+- Capa do PDF reduzida e agrupada com o índice em uma faixa clara, separada dos quadros de serviços.
