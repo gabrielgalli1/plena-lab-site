@@ -180,3 +180,11 @@
 - Lista semântica com ícones de confirmação decorativos em azul, antes do botão de acesso. Nenhuma condição comercial ou especificação adicional criada.
 - Backup em work/backups/revendedores-beneficios-20261118. PHP sem erro de sintaxe; verificação visual desktop e celular; três itens presentes e sem overflow em 1440, 768, 390 e 320 px. Sem mudanças no processamento de login ou downloads.
 - Alteração salva localmente, sem publicação.
+
+## 24/11/2026 — Versão consolidada para envio ao GitHub
+
+- Estado escolhido pelo usuário: menu branco original; fontes e tamanhos anteriores preservados. A tentativa de padronização global foi revertida.
+- Mantidos Produtos com categorias e detalhes, Catálogo 2026 e Revendedores com banner, checklist, login e biblioteca protegida.
+- Preparação da atualização da branch main do repositório existente, preservando o histórico remoto e os commits locais. Sem autorização ou execução de publicação na hospedagem.
+- Verificação prévia: 64 arquivos rastreados; 142 blobs de texto do histórico examinados, sem sinais dos padrões de credenciais verificados nem caminhos de arquivos privados. Único PDF versionado: catálogo institucional público. Listas comerciais e configuração privada permanecem fora do Git.
+- Regressão HTTP da área de revendedores: 13 cenários aprovados.

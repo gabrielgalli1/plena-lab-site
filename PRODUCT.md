@@ -35,3 +35,7 @@ Após login, são oferecidos o Excel original e doze PDFs por categoria. Dados c
 ## Biblioteca de revendedores — apresentação de 18/11/2026
 
 Área autenticada com Excel em destaque e doze categorias de PDF em diretório visual responsivo. Imagens conceituais existentes representam categorias e são identificadas como ilustrativas; não são miniaturas das listas comerciais. Manter busca, visualização e download pelas rotas PHP protegidas. Nesta etapa não se altera aprovação manual de revendedores, credencial compartilhada nem armazenamento privado.
+
+## Estado para GitHub — 24/11/2026
+
+Versão local escolhida pelo usuário: menu branco, logo original e botão azul da loja; tipografia e tamanhos anteriores à tentativa de padronização. Preservar banner e checklist de revendedores, biblioteca autenticada, Produtos e Catálogo. O usuário solicitou enviar esta versão ao GitHub. Isso guarda o projeto e seu histórico; não autoriza publicar o site ou as listas comerciais.
