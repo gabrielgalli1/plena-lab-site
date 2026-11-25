@@ -302,7 +302,7 @@
   margin-top: 10px;
   padding: clamp(15px, 2.4vw, 25px);
   border-radius: 8px;
-  background: var(--navy);
+  background: var(--blue);
   color: var(--white);
 }
 
@@ -335,6 +335,7 @@
 }
 
 .detail-support .product-inquiry:is(:hover, :active) { background: #e9eeff; }
+.products-page .detail-support a:focus-visible { outline-color: var(--white); }
 
 .product-detail-preview .detail-store-link {
   justify-self: center;

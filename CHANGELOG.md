@@ -304,3 +304,7 @@
 - Produtos destaca a variação encontrada na busca. Vidrarias ganhou o título da família selecionada e um filtro de Classe A.
 - A grade de categorias ganhou uma foto panorâmica de Vidrarias, enquadramentos mais próximos e animação leve ao passar o mouse.
 - Resultados podem ser vistos em grade ou lista. Em Vidrarias, as famílias com medidas cadastradas podem ser filtradas por capacidade. A ficha abre com a variação encontrada em destaque.
+
+### Identidade visual
+
+- O rodapé e os blocos de destaque das páginas passaram a usar o azul institucional `#092AC6`.

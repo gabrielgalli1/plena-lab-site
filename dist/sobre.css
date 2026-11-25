@@ -70,7 +70,7 @@
   margin: clamp(24px, 4vw, 44px) 0 0;
   padding: clamp(18px, 2.4vw, 28px) 0;
   border-radius: 10px;
-  background: var(--navy);
+  background: var(--blue);
   list-style: none;
 }
 
@@ -429,7 +429,7 @@
   align-items: center;
   padding: clamp(20px, 4vw, 44px);
   border-radius: 8px;
-  background: var(--navy);
+  background: var(--blue);
   color: var(--white);
 }
 

@@ -364,13 +364,13 @@
 .category-tile--featured a {
   grid-template: minmax(168px, 1fr) / minmax(0, 1fr);
   isolation: isolate;
-  border-color: #192c60;
-  background: #101f55;
+  border-color: var(--blue);
+  background: var(--blue);
 }
 
 .category-tile--featured a:hover {
   border-color: #607cdc;
-  background: #172b69;
+  background: var(--blue);
 }
 
 .category-tile--featured .category-tile-content {
@@ -404,7 +404,7 @@
 .category-tile--featured .category-tile-image {
   position: absolute;
   inset: 0;
-  background: #101f55;
+  background: var(--blue);
 }
 
 .category-tile--featured .category-tile-image img {
@@ -419,7 +419,7 @@
 .category-tile--featured .category-tile-image::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, #0b194b 1%, rgb(11 25 75 / 97%) 25%, rgb(11 25 75 / 85%) 45%, rgb(11 25 75 / 68%) 56%, rgb(11 25 75 / 8%) 76%, transparent 100%);
+  background: linear-gradient(90deg, var(--blue) 1%, color-mix(in srgb, var(--blue) 97%, transparent) 25%, color-mix(in srgb, var(--blue) 85%, transparent) 45%, color-mix(in srgb, var(--blue) 68%, transparent) 56%, color-mix(in srgb, var(--blue) 8%, transparent) 76%, transparent 100%);
   content: "";
 }
 

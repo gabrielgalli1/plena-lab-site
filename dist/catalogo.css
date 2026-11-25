@@ -106,7 +106,7 @@
   grid-template-columns: minmax(0, 9fr) minmax(0, 11fr);
   padding: 12px;
   border-radius: 12px;
-  background: var(--navy);
+  background: var(--blue);
   color: #fff;
 }
 .catalog-custom-image { position: relative; width: 100%; aspect-ratio: 16 / 9; align-self: stretch; margin: 0; overflow: hidden; border-radius: 8px; }

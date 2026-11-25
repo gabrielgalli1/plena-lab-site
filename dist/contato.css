@@ -26,8 +26,8 @@
   --channel-text: #d1dcf5;
   --channel-accent: var(--cyan);
   --channel-hover: rgba(255, 255, 255, .07);
-  border-color: var(--navy);
-  background: var(--navy);
+  border-color: var(--blue);
+  background: var(--blue);
   color: var(--white);
 }
 .contact-card .kicker { margin-bottom: 14px; color: var(--channel-accent); }
@@ -97,7 +97,7 @@
   grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr);
   overflow: hidden;
   border-radius: 8px;
-  background: var(--navy);
+  background: var(--blue);
   color: var(--white);
 }
 .contact-location-copy { align-self: center; padding: clamp(24px, 4vw, 52px); }
