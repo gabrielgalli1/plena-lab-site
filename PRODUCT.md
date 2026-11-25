@@ -22,6 +22,10 @@ TODOS funciona como diretório visual: um quadro com imagem, nome e Acessar cate
 
 Detalhes dos itens agora têm descrição geral e resumo textual de capacidades/comprimentos/configurações, sem botões individuais e sem exigir seleção de referência. Capacidades resumidas por faixa, conforme dados disponíveis; especificações técnicas adicionais dependem de validação.
 
+## Porcelanas — 25/11/2026
+
+As 30 famílias e 256 opções da lista de Porcelanas têm fichas no padrão do Gral com pistilo. Cada ficha reúne uma foto da loja virtual, descrição, características e painel expansível com capacidades, dimensões ou referências. O WhatsApp comercial recebe uma mensagem pronta sobre o produto. A loja abre na página correspondente, ou na seção de cadinhos para tampas avulsas.
+
 ## Catálogo 2026
 
 A página de Catálogo apresenta o PDF institucional fornecido pelo usuário, com a capa original, abertura, download e acesso às principais seções. O arquivo é servido localmente, sem alteração de conteúdo. A publicação oficial continua dependente de autorização expressa.

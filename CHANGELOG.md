@@ -267,3 +267,29 @@
 - Página institucional reorganizada em Quem somos, Missão, visão e valores, Segmentos atendidos, Compromisso com a qualidade e Seja nosso parceiro.
 - Indicadores de tempo de mercado, clientes e produtos em uma faixa azul-marinho, com contagem de 2,4 segundos ao entrar na tela e valores disponíveis com movimento reduzido ou sem JavaScript.
 - Layout responsivo com imagens de fabricação e calibração e sem título fixo sobre o texto em telas estreitas.
+- Missão, visão e valores reunidos em um quadro com ícones e entrada em sequência. Missão e visão ocupam a coluna da esquerda, e os seis valores ficam na área azul-clara ao lado.
+- Segmentos que atendemos com introdução e galeria responsiva de 12 imagens ilustrativas em recortes diagonais.
+- Cada fileira de segmentos tem uma onda pontilhada por trás dos cards. Os cards entram em sequência na rolagem e se elevam ao passar o mouse.
+- Traçados de onda variados por fileira, fundo azul-claro, destaque no título, rótulos mais equilibrados no celular e enquadramentos ajustados em três fotos.
+- Compromisso com a qualidade com foto ilustrativa de uma conferência de vidraria e três pontos de destaque com ícones e animação em sequência.
+- Convite de parceria em azul-marinho, com mensagem sobre orçamento e botão para conversar pelo WhatsApp comercial.
+
+### Rodapé
+
+- Rodapé unificado nas seis páginas, com redes sociais, navegação, WhatsApp comercial, dois telefones, e-mail, horário, mapa e link para voltar ao topo.
+- No celular, o atendimento aparece logo abaixo da marca.
+- Frase de marca renovada, redes sociais agrupadas e rótulos para e-mail e horário de atendimento.
+- Frase de marca em texto menor e redes sociais em linhas alinhadas, com nome e conta de cada perfil.
+- Redes sociais em um bloco próprio, alinhado aos demais títulos no desktop.
+- Razão social, CNPJ e link para o Aviso de privacidade no rodapé. A página explica o atendimento, a sessão de revendedores e os serviços de terceiros.
+
+### Produtos
+
+- Ficha do Gral com pistilo com moldura horizontal para a foto, descrição mais direta, faixa de capacidade e ações de WhatsApp e loja. No celular, o nome do produto aparece antes da foto.
+- Ficha do Gral com pistilo com descrição baseada na loja, 14 capacidades e diâmetros conferidos na lista de Porcelanas, painel expansível e atendimento para estoque, outras medidas e dúvidas.
+- Categoria Porcelanas ampliada para 30 fichas e 256 opções da lista de revenda, com fotos da loja, painel de medidas e atalhos para atendimento e compra.
+- Vitrine de Porcelanas com cartões clicáveis, medidas junto aos nomes e disposição horizontal dos cartões no celular.
+- Painel expansível de capacidades e medidas passou a ocupar a largura da ficha abaixo da foto e da descrição.
+- Ferragens recebeu o mesmo layout de Porcelanas, com 70 fichas e 290 opções da lista de revenda, fotos de referência e canais de consulta.
+- Materiais em inox e alumínio recebeu a mesma vitrine e o painel de medidas em toda a largura, com 55 fichas e 365 opções da lista de revenda.
+- Material em poli recebeu a mesma vitrine, com 94 fichas, 301 opções da lista de revenda e atalhos para consulta e para a loja.

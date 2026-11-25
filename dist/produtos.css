@@ -210,6 +210,7 @@
 /* Fotografias originais da loja, sem recorte dos produtos. */
 .product-photo { display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 1.19; padding: 12px; background: #fff; border: 1px solid #edf0f5; }
 .product-photo img { width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; }
+.product-photo-unavailable { padding: 8px; color: var(--muted); font-size: var(--type-note); text-align: center; }
 .detail-media > .product-photo { aspect-ratio: 1; }
 .detail-media > p a { color: #092ac6; text-decoration: underline; text-underline-offset: 3px; }
 @media(max-width:560px) { .product-photo { aspect-ratio: 1.45; } .detail-media > .product-photo { aspect-ratio: 1.19; } }
@@ -239,4 +240,226 @@
 
 @media (max-width: 420px) {
   .products-page .page-hero { padding-top: 103px; }
+}
+
+.catalog-results-header.catalog-line-results {
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.catalog-results-header.catalog-line-results h2 {
+  color: var(--navy);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.12;
+}
+
+.catalog-results-header.catalog-line-results p {
+  flex: 0 0 auto;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.catalog-line .catalog-items {
+  gap: 20px;
+}
+
+.catalog-line .catalog-item {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 2px 6px rgba(7, 19, 46, .035);
+}
+
+.catalog-line .product-photo {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  aspect-ratio: 1.64;
+  padding: 0;
+  border: 0;
+  border-radius: 11px 11px 0 0;
+  background: var(--soft);
+}
+
+.catalog-line .product-photo img {
+  position: absolute;
+  inset: 0;
+  padding: clamp(10px, 1.4vw, 20px);
+  mix-blend-mode: multiply;
+}
+
+/* As fotos dos pistilos têm margens e exposições diferentes. */
+.catalog-line [data-catalog-item="porcelanas-pistilo-com-cabo-de-madeira"] img {
+  padding: 6px;
+  translate: 11% 18%;
+}
+
+.catalog-line [data-catalog-item="porcelanas-pistilo-de-porcelana"] img {
+  padding: clamp(7px, 1vw, 13px);
+  filter: brightness(1.18) saturate(.8);
+  mask-image: linear-gradient(to bottom, #000 68%, transparent 94%);
+}
+
+.catalog-line .product-photo:has(.catalog-line-photo-note) img {
+  padding-bottom: 31px;
+}
+
+.catalog-line-photo-note {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  max-width: calc(100% - 16px);
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--muted);
+  font-size: .6875rem;
+  line-height: 1.3;
+}
+
+.catalog-line .catalog-item-copy {
+  min-width: 0;
+  padding: 15px 18px 5px;
+  border-top: 1px solid var(--line);
+}
+
+.catalog-line .catalog-item h3 {
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+  line-height: 1.3;
+  text-wrap: pretty;
+}
+
+.catalog-line-measures {
+  margin-top: auto;
+  padding-bottom: 12px;
+}
+
+.catalog-line .catalog-item-range {
+  margin: 0;
+  color: var(--navy);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.catalog-line .catalog-item-count {
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+.catalog-line .catalog-detail-link {
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-line .catalog-detail-link::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 12px;
+  content: "";
+}
+
+.catalog-line .catalog-detail-link:focus-visible {
+  outline: none;
+}
+
+.catalog-line .catalog-detail-link:focus-visible::after {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.catalog-line-arrow {
+  display: grid;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--soft);
+}
+
+.products-page .catalog-line-arrow svg {
+  width: 15px;
+  height: 15px;
+  transform: none;
+}
+
+.catalog-line .catalog-detail-link:is(:hover, :focus-visible) .catalog-line-arrow {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.catalog-line .product-capacity-fallback {
+  margin: 0 0 10px;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .catalog-line .catalog-item {
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+  }
+
+  .catalog-line .product-photo img {
+    transition: transform .22s ease;
+  }
+
+  .catalog-enhanced .catalog-line .catalog-item:hover {
+    transform: translateY(-3px);
+    border-color: #b8c7eb;
+    box-shadow: 0 9px 20px rgba(7, 19, 46, .08);
+  }
+
+  .catalog-enhanced .catalog-line .catalog-item:hover img {
+    transform: scale(1.035);
+  }
+}
+
+@media (max-width: 900px) {
+  .catalog-line .catalog-items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (min-width: 601px) {
+  .catalog-line [data-catalog-item="porcelanas-gral-com-pistilo"] img {
+    scale: 1.28;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog-line .catalog-items {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .catalog-line .catalog-item {
+    display: grid;
+    grid-template-columns: minmax(0, 37%) minmax(0, 1fr);
+  }
+
+  .catalog-line .product-photo {
+    min-height: 135px;
+    aspect-ratio: auto;
+    border-radius: 11px 0 0 11px;
+  }
+
+  .catalog-line [data-catalog-item="porcelanas-pistilo-com-cabo-de-madeira"] img {
+    translate: 11% 10%;
+  }
+
+  .catalog-line .catalog-item-copy {
+    padding: 11px 12px 3px;
+    border-top: 0;
+    border-left: 1px solid var(--line);
+  }
+
+  .catalog-line-measures {
+    padding-bottom: 8px;
+  }
 }

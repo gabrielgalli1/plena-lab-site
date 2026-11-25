@@ -9,6 +9,12 @@
   const listView = document.querySelector('[data-catalog-list-view]');
   const detailView = document.querySelector('[data-catalog-detail-view]');
   const details = [...document.querySelectorAll('[data-product-detail]')];
+  const catalogLineDetail = document.querySelector('[data-catalog-line-detail]');
+  const catalogLineNames = new Map([...document.querySelectorAll('.catalog-line[data-category-group]')].map(group => [
+    group.dataset.categoryGroup,
+    group.querySelector('h2').textContent
+  ]));
+  const resultsHeader = document.querySelector('.catalog-results-header');
   const count = document.querySelector('[data-catalog-count]');
   const empty = document.querySelector('[data-catalog-empty]');
   const back = document.querySelector('[data-catalog-back]');
@@ -24,8 +30,15 @@
 
   const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const compact = value => normalize(value).replace(/[^a-z0-9]/g, '');
-  const textIndex = product => normalize([product.name, product.subtitle, product.description, product.sourceName, ...product.aliases, ...product.variants.flatMap(v => [v.reference, v.capacity])].join(' '));
-  const indexes = new Map(products.map(p => [p.id, textIndex(p)]));
+  function searchIndex(product) {
+    const fields = [
+      product.name, product.subtitle, product.description, product.sourceName,
+      ...product.aliases,
+      ...product.variants.flatMap(option => [option.reference, option.capacity, option.detail])
+    ].filter(Boolean);
+    return { text: normalize(fields.join(' ')), compactFields: fields.map(compact) };
+  }
+  const indexes = new Map(products.map(product => [product.id, searchIndex(product)]));
   function updateSearchUrl(push = false) {
     const url = new URL(location.href);
     const query = search.value.trim();
@@ -41,7 +54,8 @@
     cards.forEach(card => {
       const product = products.find(p => p.id === card.dataset.catalogItem);
       const index = indexes.get(product.id);
-      const textMatch = !terms.length || terms.every(term => index.includes(term)) || compact(index).includes(compactTerm);
+      const textMatch = !terms.length || terms.every(term => index.text.includes(term)) ||
+        index.compactFields.some(field => field.includes(compactTerm));
       const show = (activeType === 'todos' || activeType === product.type) && textMatch;
       card.hidden = !show;
       if (show) visible += 1;
@@ -62,7 +76,10 @@
       if (matching) visibleCategories += 1;
     });
     count.textContent = isOverview ? `${visibleCategories} ${visibleCategories === 1 ? 'categoria' : 'categorias'}` : `${visible} ${visible === 1 ? 'item' : 'itens'}`;
-    document.querySelector('.catalog-results-header h2').textContent = isOverview ? 'Explore nossas categorias' : products.find(p => p.type === activeType).category;
+    const lineName = catalogLineNames.get(activeType);
+    const categoryName = isOverview ? 'Explore nossas categorias' : lineName || products.find(p => p.type === activeType).category;
+    resultsHeader.classList.toggle('catalog-line-results', Boolean(lineName));
+    resultsHeader.querySelector('h2').textContent = categoryName;
     empty.hidden = visible !== 0;
     if (syncUrl) updateSearchUrl();
   }
@@ -73,24 +90,98 @@
     types.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === activeType)));
     filterProducts(false);
   }
-  function updateInquiry(product) {
-    const detail = details.find(node => node.dataset.productDetail === product.id);
+  function renderCatalogLineDetail(detail, product, lineName) {
+    const panel = detail.querySelector('.detail-capacity');
+    if (currentId !== product.id) panel.open = false;
+    if (detail.dataset.productDetail === product.id) return;
+    detail.dataset.productDetail = product.id;
+
+    const title = detail.querySelector('h1');
+    title.id = `titulo-${product.id}`;
+    title.textContent = product.name;
+    detail.setAttribute('aria-labelledby', title.id);
+    const category = detail.querySelector('[data-detail-category]');
+    category.textContent = lineName;
+    category.href = `produtos.html?tipo=${product.type}`;
+
+    const photo = detail.querySelector('[data-detail-image]');
+    photo.alt = product.imageAlt || '';
+    photo.hidden = !product.image;
+    if (product.image) photo.src = product.image;
+    else photo.removeAttribute('src');
+    detail.querySelector('[data-detail-photo-placeholder]').hidden = Boolean(product.image);
+    const caption = detail.querySelector('[data-detail-image-caption]');
+    caption.textContent = product.imageCaption || '';
+    caption.hidden = !product.imageCaption;
+
+    detail.querySelector('.detail-description').textContent = product.description;
+    detail.querySelector('.detail-facts').replaceChildren(...product.features.map(([label, value]) => {
+      const fact = document.createElement('div');
+      const term = document.createElement('dt');
+      const definition = document.createElement('dd');
+      term.textContent = label;
+      definition.textContent = value;
+      fact.append(term, definition);
+      return fact;
+    }));
+
+    panel.hidden = product.variants.length === 0;
+    detail.querySelector('[data-detail-variant-label]').textContent = product.availabilityLabel;
+    detail.querySelector('[data-detail-variant-summary]').textContent = `${product.optionCount} · ${product.availabilitySummary}`;
+    detail.querySelector('[data-detail-variants]').replaceChildren(...product.variants.map(variant => {
+      const item = document.createElement('li');
+      const value = document.createElement('strong');
+      value.textContent = variant.capacity;
+      item.append(value);
+      if (variant.detail) {
+        const dimensions = document.createElement('small');
+        dimensions.textContent = variant.detail;
+        item.append(dimensions);
+      }
+      if (variant.reference && variant.reference !== variant.capacity) {
+        const reference = document.createElement('small');
+        reference.className = 'detail-variant-reference';
+        reference.textContent = variant.reference;
+        item.append(reference);
+      }
+      return item;
+    }));
+    const variantNote = detail.querySelector('[data-detail-variant-note]');
+    variantNote.textContent = product.variantNote || '';
+    variantNote.hidden = !product.variantNote;
+
+    const storeLink = detail.querySelector('.detail-store-link');
+    storeLink.href = product.storeUrl;
+    storeLink.querySelector('[data-detail-store-label]').textContent = product.storeLabel || 'Ver produto na loja virtual';
+  }
+  function updateInquiry(detail, product, lineName) {
     const subject = [product.name, product.subtitle].filter(Boolean).join(' — ');
-    detail.querySelector('[data-product-inquiry]').href = `https://wa.me/5511947092039?text=${encodeURIComponent(`Olá! Gostaria de informações sobre ${subject} e as opções disponíveis.`)}`;
+    const inquiry = detail.querySelector('[data-product-inquiry]');
+    const message = lineName
+      ? `Olá! Gostaria de consultar o estoque de ${product.name} (${lineName}) e saber mais sobre as opções disponíveis.`
+      : inquiry.dataset.productInquiry || `Olá! Gostaria de informações sobre ${subject} e as opções disponíveis.`;
+    inquiry.href = `https://wa.me/5511947092039?text=${encodeURIComponent(message)}`;
   }
   function showRoute(focus = false) {
     const hash = new URLSearchParams(location.hash.slice(1));
     const product = products.find(p => p.id === hash.get('produto'));
-    document.body.classList.toggle('viewing-product', Boolean(product));
-    listView.hidden = Boolean(product);
-    detailView.hidden = !product;
-    details.forEach(detail => { detail.hidden = !product || detail.dataset.productDetail !== product.id; });
-    if (product) {
-      updateInquiry(product);
+    const lineName = catalogLineNames.get(product?.type);
+    const selectedDetail = product && (lineName
+      ? catalogLineDetail
+      : details.find(detail => detail.dataset.productDetail === product.id));
+    document.body.classList.toggle('viewing-product', Boolean(selectedDetail));
+    listView.hidden = Boolean(selectedDetail);
+    detailView.hidden = !selectedDetail;
+    if (selectedDetail && lineName) renderCatalogLineDetail(selectedDetail, product, lineName);
+    details.forEach(detail => { detail.hidden = detail !== selectedDetail; });
+    if (selectedDetail) {
+      updateInquiry(selectedDetail, product, lineName);
       currentId = product.id;
-      document.title = `${product.name} ${product.subtitle} | Plena-Lab`;
+      document.title = lineName
+        ? `${product.name} | ${lineName} | Plena-Lab`
+        : `${product.name} ${product.subtitle} | Plena-Lab`;
       if (focus) {
-        document.querySelector(`#titulo-${product.id}`).focus({ preventScroll: true });
+        selectedDetail.querySelector('h1').focus({ preventScroll: true });
         detailView.scrollIntoView({ block: 'start', behavior: 'instant' });
       }
     } else {
