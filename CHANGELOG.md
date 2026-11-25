@@ -293,3 +293,14 @@
 - Ferragens recebeu o mesmo layout de Porcelanas, com 70 fichas e 290 opções da lista de revenda, fotos de referência e canais de consulta.
 - Materiais em inox e alumínio recebeu a mesma vitrine e o painel de medidas em toda a largura, com 55 fichas e 365 opções da lista de revenda.
 - Material em poli recebeu a mesma vitrine, com 94 fichas, 301 opções da lista de revenda e atalhos para consulta e para a loja.
+- Acessórios recebeu 28 fichas, com 101 opções da lista de revenda, fotos da loja e da lista e atalhos para atendimento e compra.
+- Rolhas reúne quatro fichas com 36 opções da lista de revenda, entre rolhas numeradas e alongas para Kitazato em borracha e silicone.
+- Equipamentos em PP recebeu 20 fichas com 67 opções da lista de revenda, incluindo fotos, dimensões e referências, com consulta pelo WhatsApp.
+- Escovas reuniu as 27 variações da lista de revenda em uma ficha, com diâmetros, comprimentos e referências, foto da linha, WhatsApp e link da loja virtual.
+- Papel filtro recebeu três fichas com 35 medidas da lista de revenda, entre papel qualitativo circular, papel qualitativo quadrado e cartucho extrator.
+- Vidrarias recebeu 243 fichas na ordem da lista de revenda, com 1621 opções e painel de medidas. A vitrine reúne versões comuns e Classe A.
+- Produtos recebeu uma grade de categorias com fotos maiores e destaque para Vidrarias, busca direta de fichas por nome, medida ou referência e retorno à grade em cada categoria.
+- Vidrarias ganhou um filtro com 19 famílias que pode ser usado junto com a busca por nome, código ou medida.
+- Produtos destaca a variação encontrada na busca. Vidrarias ganhou o título da família selecionada e um filtro de Classe A.
+- A grade de categorias ganhou uma foto panorâmica de Vidrarias, enquadramentos mais próximos e animação leve ao passar o mouse.
+- Resultados podem ser vistos em grade ou lista. Em Vidrarias, as famílias com medidas cadastradas podem ser filtradas por capacidade. A ficha abre com a variação encontrada em destaque.
